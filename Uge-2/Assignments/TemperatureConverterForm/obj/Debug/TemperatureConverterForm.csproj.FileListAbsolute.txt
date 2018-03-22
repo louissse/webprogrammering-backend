@@ -1,0 +1,10 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\bin\Debug\TemperatureConverterForm.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\bin\Debug\TemperatureConverterForm.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\bin\Debug\TemperatureConverterForm.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.csprojResolveAssemblyReference.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.Form1.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.Properties.Resources.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.csproj.GenerateResource.Cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\TemperatureConverterForm\obj\Debug\TemperatureConverterForm.pdb

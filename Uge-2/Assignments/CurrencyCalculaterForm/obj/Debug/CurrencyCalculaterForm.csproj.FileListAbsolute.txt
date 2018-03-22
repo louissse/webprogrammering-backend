@@ -1,0 +1,10 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\bin\Debug\CurrencyCalculaterForm.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\bin\Debug\CurrencyCalculaterForm.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\bin\Debug\CurrencyCalculaterForm.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.csprojResolveAssemblyReference.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.Form1.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.Properties.Resources.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.csproj.GenerateResource.Cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\CurrencyCalculaterForm\obj\Debug\CurrencyCalculaterForm.pdb

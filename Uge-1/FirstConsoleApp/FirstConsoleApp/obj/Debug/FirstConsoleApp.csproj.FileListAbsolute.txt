@@ -1,0 +1,7 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\bin\Debug\FirstConsoleApp.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\bin\Debug\FirstConsoleApp.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\bin\Debug\FirstConsoleApp.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\obj\Debug\FirstConsoleApp.csprojResolveAssemblyReference.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\obj\Debug\FirstConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\obj\Debug\FirstConsoleApp.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\FirstConsoleApp\FirstConsoleApp\obj\Debug\FirstConsoleApp.pdb

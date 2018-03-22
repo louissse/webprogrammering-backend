@@ -1,0 +1,7 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\bin\Debug\NumbersAndLoops.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\bin\Debug\NumbersAndLoops.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\bin\Debug\NumbersAndLoops.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\obj\Debug\NumbersAndLoops.csprojResolveAssemblyReference.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\obj\Debug\NumbersAndLoops.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\obj\Debug\NumbersAndLoops.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\NumbersAndLoops\obj\Debug\NumbersAndLoops.pdb

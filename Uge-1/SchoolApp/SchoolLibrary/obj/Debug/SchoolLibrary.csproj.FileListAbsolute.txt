@@ -1,0 +1,6 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\bin\Debug\SchoolLibrary.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\bin\Debug\SchoolLibrary.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\obj\Debug\SchoolLibrary.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\obj\Debug\SchoolLibrary.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\obj\Debug\SchoolLibrary.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge1\SchoolApp\SchoolLibrary\obj\Debug\SchoolLibrary.csprojResolveAssemblyReference.cache

@@ -1,0 +1,6 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\bin\Debug\DiceHitSix.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\bin\Debug\DiceHitSix.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\bin\Debug\DiceHitSix.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\obj\Debug\DiceHitSix.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\obj\Debug\DiceHitSix.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\Assignments\DiceHitSix\obj\Debug\DiceHitSix.pdb

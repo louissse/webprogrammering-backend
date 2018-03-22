@@ -1,0 +1,10 @@
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\NLog.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\EssentialTrainingApp.exe.config
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\EssentialTrainingApp.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\EssentialTrainingApp.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\NLog.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\bin\Release\NLog.xml
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\obj\Release\EssentialTrainingApp.csprojResolveAssemblyReference.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\obj\Release\EssentialTrainingApp.csproj.CoreCompileInputs.cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\obj\Release\EssentialTrainingApp.exe
+C:\Users\loh\Documents\projects\WebProgrammingBackend\Uge 2\EssentialTraining\EssentialTrainingApp\obj\Release\EssentialTrainingApp.pdb
