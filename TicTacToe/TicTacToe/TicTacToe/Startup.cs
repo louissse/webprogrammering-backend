@@ -24,6 +24,10 @@ namespace TicTacToe
             services.AddMvc();
             services.AddSingleton<IUserService, UserService>();
             services.AddRouting();
+            services.AddSession(o =>
+            {
+                o.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +43,7 @@ namespace TicTacToe
             }
 
             app.UseStaticFiles();
+            app.UseSession();
 
             //Eksempel på rewriting
             var options = new RewriteOptions()
