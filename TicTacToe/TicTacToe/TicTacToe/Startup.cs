@@ -13,18 +13,25 @@ using TicTacToe.Models;
 using Microsoft.AspNetCore.Rewrite;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
+using Microsoft.Extensions.Configuration;
+using TicTacToe.Options;
 
 namespace TicTacToe
 {
-    //This class is all about the preloading and configuration of your services and middlewares.
+
     public class Startup
     {
-        // This method gets called by the runtime. Use this method to add services to the container.
-        // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
+        public IConfiguration _configuration { get; }
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
+        {
+            _configuration = configuration;
+        }
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
             services.AddSingleton<IUserService, UserService>();
+            services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
             services.AddSingleton<IEmailService, EmailService>();
             services.AddRouting();
             services.AddSession(o =>
