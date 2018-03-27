@@ -11,6 +11,8 @@ using TicTacToe.Extensions;
 using Microsoft.AspNetCore.Routing;
 using TicTacToe.Models;
 using Microsoft.AspNetCore.Rewrite;
+using System.Globalization;
+using Microsoft.AspNetCore.Localization;
 
 namespace TicTacToe
 {
@@ -23,6 +25,7 @@ namespace TicTacToe
         {
             services.AddMvc();
             services.AddSingleton<IUserService, UserService>();
+            services.AddSingleton<IEmailService, EmailService>();
             services.AddRouting();
             services.AddSession(o =>
             {
@@ -68,6 +71,8 @@ namespace TicTacToe
 
             app.UseWebSockets();
             app.UseCommunicationMiddleware();
+
+            //Use the MVC model
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
