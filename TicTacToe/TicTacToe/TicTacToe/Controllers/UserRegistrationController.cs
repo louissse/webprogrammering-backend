@@ -6,19 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 using TicTacToe.Services;
 using TicTacToe.Models;
 using Microsoft.AspNetCore.Mvc.Routing;
+using Microsoft.Extensions.Logging;
 
 namespace TicTacToe.Controllers
 {
     public class UserRegistrationController : Controller
     {
-        private IUserService _userService;
+        readonly IUserService _userService;
         readonly IEmailService _emailService;
+        readonly ILogger<UserRegistrationController> _logger;
 
-        public UserRegistrationController(IUserService userService, IEmailService emailService)
+        public UserRegistrationController(IUserService userService, IEmailService emailService, ILogger<UserRegistrationController> logger)
         {
             _userService = userService;
             _emailService = emailService;
-
+            _logger = logger;
         }
 
         public IActionResult Index()
@@ -42,6 +44,8 @@ namespace TicTacToe.Controllers
         [HttpGet]
         public async Task<IActionResult> EmailConfirmation(string email)
         {
+            _logger.LogInformation($"##Start## Email confirmation process for { email}"); //logging
+
             var user = await _userService.GetUserByEmail(email);
             var urlAction = new UrlActionContext
             {
