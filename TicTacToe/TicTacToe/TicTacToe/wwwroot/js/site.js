@@ -11,6 +11,18 @@ function EmailConfirmation(email) {
         }, 5000);
     }
 }
+function GameInvitationConfirmation(id) {
+    if (window.WebSocket) {
+        alert("Websockets are enabled");
+        openSocket(id, "GameInvitation");
+    }
+    else {
+        alert("Websockets are not enabled");
+        interval = setInterval(() => {
+            CheckGameInvitationConfirmationStatus(id);
+        }, 5000);
+    }
+}
 function CheckEmailConfirmationStatus(email) {
     $.get("/CheckEmailConfirmationStatus?email=" + email, function (data) {
         if (data === "OK") {

@@ -1,0 +1,81 @@
+29-03-2018 18:51:35 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+29-03-2018 18:51:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+29-03-2018 18:51:37 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+29-03-2018 18:51:41 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+29-03-2018 18:51:43 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 6071.801ms
+29-03-2018 18:51:43 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=dmFKojBZGESLtCn5iuu-DCLJwLHxMLkXuV7EdgOovUs  
+29-03-2018 18:51:43 2 Information Request finished in 7002.6239ms 200 text/html; charset=utf-8
+29-03-2018 18:51:43 6 Information The file /js/site.js was not modified
+29-03-2018 18:51:44 2 Information Request finished in 145.4256ms 304 application/javascript
+29-03-2018 18:51:44 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+29-03-2018 18:51:44 2 Information Request finished in 245.937ms 404 text/plain
+29-03-2018 18:51:45 1 Information Request starting HTTP/1.1 GET http://localhost:49628/NewUser  
+29-03-2018 18:51:45 10 Information Request was rewritten to /UserRegistration/Index
+29-03-2018 18:51:45 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+29-03-2018 18:51:46 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+29-03-2018 18:51:46 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 1164.1985ms
+29-03-2018 18:51:46 2 Information Request finished in 1260.4193ms 200 text/html; charset=utf-8
+29-03-2018 18:51:56 1 Information Request starting HTTP/1.1 POST http://localhost:49628/UserRegistration application/x-www-form-urlencoded 263
+29-03-2018 18:51:57 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments (TicTacToe.Models.UserModel) - ModelState is Valid
+29-03-2018 18:51:57 1 Information Executing RedirectResult, redirecting to /UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com.
+29-03-2018 18:51:57 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 301.6916ms
+29-03-2018 18:51:57 2 Information Request finished in 372.0603ms 302 
+29-03-2018 18:51:57 1 Information Request starting HTTP/1.1 GET http://localhost:49628/UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com  
+29-03-2018 18:51:57 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+29-03-2018 18:51:57 0 Information ##Start## Email confirmation process for lhoepfner@gmail.com
+29-03-2018 18:51:57 0 Information ##Start sendEmail## Start sending Email to lhoepfner@gmail.com
+29-03-2018 18:51:58 0 Error Cannot send email System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at TicTacToe.Services.EmailService.SendEmail(String emailTo, String subject, String message) in C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\Services\EmailService.cs:line 37
+29-03-2018 18:51:59 1 Information Executing ViewResult, running view at path /Views/UserRegistration/EmailConfirmation.cshtml.
+29-03-2018 18:51:59 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) in 2022.6179ms
+29-03-2018 18:51:59 2 Information Request finished in 2097.2725ms 200 text/html; charset=utf-8
+29-03-2018 18:52:01 1 Information Request starting HTTP/1.1 GET http://localhost:49628/CheckEmailConfirmationStatus  
+29-03-2018 18:52:01 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation?email=lhoepfner@gmail.com  
+29-03-2018 18:52:01 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+29-03-2018 18:52:02 2 Information Request finished in 706.4913ms 101 
+29-03-2018 18:52:02 1 Information Executing ViewResult, running view at path /Views/GameInvitation/Index.cshtml.
+29-03-2018 18:52:02 2 Information Executed action TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) in 689.0019ms
+29-03-2018 18:52:02 3 Information Session started; Key:e765f65c-8e98-6152-1678-6702cd572779, Id:c9b8fc21-3f8c-60a6-797e-b42c98fee8ee
+29-03-2018 18:52:02 2 Information Request finished in 781.9562ms 200 text/html; charset=utf-8
+29-03-2018 18:52:05 1 Information Request starting HTTP/1.1 POST http://localhost:49628/GameInvitation application/x-www-form-urlencoded 279
+29-03-2018 18:52:05 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) with arguments (TicTacToe.Models.GameInvitationModel, TicTacToe.Services.EmailService) - ModelState is Valid
+29-03-2018 18:52:05 0 Information ##Start sendEmail## Start sending Email to loh@nextkbh.dk
+29-03-2018 18:52:06 0 Error Cannot send email System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at TicTacToe.Services.EmailService.SendEmail(String emailTo, String subject, String message) in C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\Services\EmailService.cs:line 37
+29-03-2018 18:52:06 1 Information Executing RedirectResult, redirecting to /GameInvitation/GameInvitationConfirmation/b22e0f84-0fcc-471d-a0c1-5937a16f6957.
+29-03-2018 18:52:06 2 Information Executed action TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) in 1257.2386ms
+29-03-2018 18:52:06 2 Information Request finished in 1325.8281ms 302 
+29-03-2018 18:52:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation/GameInvitationConfirmation/b22e0f84-0fcc-471d-a0c1-5937a16f6957  
+29-03-2018 18:52:06 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.GameInvitationConfirmation (TicTacToe) with arguments (b22e0f84-0fcc-471d-a0c1-5937a16f6957, TicTacToe.Services.GameInvitationService) - ModelState is Valid
+29-03-2018 18:52:06 1 Information Executing ViewResult, running view at path /Views/GameInvitation/GameInvitationConfirmation.cshtml.
+29-03-2018 18:52:06 2 Information Executed action TicTacToe.Controllers.GameInvitationController.GameInvitationConfirmation (TicTacToe) in 384.4801ms
+29-03-2018 18:52:06 2 Information Request finished in 443.1983ms 200 text/html; charset=utf-8
+29-03-2018 18:52:15 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitationConfirmation  
+29-03-2018 18:52:33 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameSession/Index/b22e0f84-0fcc-471d-a0c1-5937a16f6957  
+29-03-2018 18:52:33 2 Information Request finished in 11.3616ms 404 text/plain

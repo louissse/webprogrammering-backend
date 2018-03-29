@@ -10,6 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using TicTacToe.Models;
 using TicTacToe.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace TicTacToe.Middlewares
 {
@@ -40,11 +41,21 @@ namespace TicTacToe.Middlewares
                             await ProcessEmailConfirmation(context, webSocket, ct, command.Parameters.ToString());
                             break;
                         }
+
+                    case "CheckGameInvitationConfirmationStatus":
+                        {
+                            await ProcessGameInvitationConfirmation(context, webSocket, ct, command.Parameters.ToString());
+                            break;
+                        }
                 }
             }
             else if (context.Request.Path.Equals("/CheckEmailConfirmationStatus"))
             {
                 await ProcessEmailConfirmation(context);
+            }
+            else if (context.Request.Path.Equals("/CheckGameInvitationConfirmationStatus"))
+            {
+                await ProcessGameInvitationConfirmation(context);
             }
             else
             {
@@ -56,6 +67,7 @@ namespace TicTacToe.Middlewares
         {
             var email = context.Request.Query["email"];
             var user = await _userService.GetUserByEmail(email);
+
             if (string.IsNullOrEmpty(email))
             {
                 await context.Response.WriteAsync("BadRequest:Email is required");
@@ -70,11 +82,10 @@ namespace TicTacToe.Middlewares
                 user.IsEmailConfirmed = true;
                 user.EmailConfirmationDate = DateTime.Now;
                 _userService.UpdateUser(user).Wait();
+
             }
         }
 
-
-        //For WebSocket communication
         private static Task SendStringAsync(WebSocket socket, string data, CancellationToken ct = default(CancellationToken))
         {
             var buffer = Encoding.UTF8.GetBytes(data);
@@ -82,7 +93,6 @@ namespace TicTacToe.Middlewares
             return socket.SendAsync(segment, WebSocketMessageType.Text, true, ct);
         }
 
-        //For WebSocket communication
         private static async Task<string> ReceiveStringAsync(WebSocket socket, CancellationToken ct = default(CancellationToken))
         {
             var buffer = new ArraySegment<byte>(new byte[8192]);
@@ -109,7 +119,6 @@ namespace TicTacToe.Middlewares
             }
         }
 
-        //Process email confirmation via WebSockets
         public async Task ProcessEmailConfirmation(HttpContext context, WebSocket currentSocket, CancellationToken ct, string email)
         {
             UserModel user = await _userService.GetUserByEmail(email);
@@ -130,7 +139,49 @@ namespace TicTacToe.Middlewares
 
                 Task.Delay(500).Wait();
                 user = await _userService.GetUserByEmail(email);
+            }
+        }
 
+        private async Task ProcessGameInvitationConfirmation(HttpContext context)
+        {
+            var id = context.Request.Query["id"];
+            if (string.IsNullOrEmpty(id))
+                await context.Response.WriteAsync("BadRequest:Id is required");
+
+            var gameInvitationService = context.RequestServices.GetService<IGameInvitationService>();
+            var gameInvitationModel = await gameInvitationService.Get(Guid.Parse(id));
+
+            if (gameInvitationModel.IsConfirmed)
+                await context.Response.WriteAsync(JsonConvert.SerializeObject(new
+                {
+                    Result = "OK",
+                    Email = gameInvitationModel.InvitedBy,
+                    gameInvitationModel.EmailTo
+                }));
+            else
+            {
+                await context.Response.WriteAsync("WaitGameInvitationConfirmation");
+            }
+        }
+
+        private async Task ProcessGameInvitationConfirmation(HttpContext context, WebSocket webSocket, CancellationToken ct, string parameters)
+        {
+            var gameInvitationService = context.RequestServices.GetService<IGameInvitationService>();
+            var id = Guid.Parse(parameters);
+            var gameInvitationModel = await gameInvitationService.Get(id);
+            while (!ct.IsCancellationRequested && !webSocket.CloseStatus.HasValue && gameInvitationModel?.IsConfirmed == false)
+            {
+                await SendStringAsync(webSocket, JsonConvert.SerializeObject(new
+                {
+                    Result = "OK",
+                    Email = gameInvitationModel.InvitedBy,
+                    gameInvitationModel.EmailTo,
+                    gameInvitationModel.Id
+                }), ct);
+
+                Task.Delay(500).Wait();
+
+                gameInvitationModel = await gameInvitationService.Get(id);
             }
         }
     }
