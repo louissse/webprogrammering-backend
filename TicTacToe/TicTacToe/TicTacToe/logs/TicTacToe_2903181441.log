@@ -1,0 +1,35 @@
+29-03-2018 12:41:52 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+29-03-2018 12:41:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+29-03-2018 12:41:55 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+29-03-2018 12:41:59 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+29-03-2018 12:42:01 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 6812.5443ms
+29-03-2018 12:42:01 1 Information Request starting HTTP/1.1 GET http://localhost:49628/css/site.css  
+29-03-2018 12:42:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/jquery/dist/jquery.js  
+29-03-2018 12:42:02 2 Information Request finished in 7873.1662ms 200 text/html; charset=utf-8
+29-03-2018 12:42:02 6 Information The file /css/site.css was not modified
+29-03-2018 12:42:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/bootstrap/dist/js/bootstrap.js  
+29-03-2018 12:42:02 2 Information Request finished in 357.3642ms 304 text/css
+29-03-2018 12:42:02 6 Information The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+29-03-2018 12:42:02 2 Information Request finished in 635.8948ms 304 application/javascript
+29-03-2018 12:42:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts1.js  
+29-03-2018 12:42:02 6 Information The file /lib/jquery/dist/jquery.js was not modified
+29-03-2018 12:42:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/bootstrap/dist/css/bootstrap.css  
+29-03-2018 12:42:02 6 Information The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+29-03-2018 12:42:02 6 Information The file /app/js/scripts1.js was not modified
+29-03-2018 12:42:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts2.js  
+29-03-2018 12:42:02 2 Information Request finished in 822.9029ms 304 application/javascript
+29-03-2018 12:42:02 6 Information The file /app/js/scripts2.js was not modified
+29-03-2018 12:42:02 2 Information Request finished in 254.4917ms 304 text/css
+29-03-2018 12:42:03 2 Information Request finished in 376.2634ms 304 application/javascript
+29-03-2018 12:42:03 2 Information Request finished in 335.4921ms 304 application/javascript
+29-03-2018 12:42:03 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=v-0TzULj00PSaRHLGV1_SWo1frfjNhDGOV-8rYAFp3k  
+29-03-2018 12:42:03 6 Information The file /js/site.js was not modified
+29-03-2018 12:42:03 2 Information Request finished in 162.8033ms 304 application/javascript
+29-03-2018 12:42:03 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+29-03-2018 12:42:03 2 Information Request finished in 50.1439ms 404 text/plain
+29-03-2018 12:42:05 1 Information Request starting HTTP/1.1 GET http://localhost:49628/NewUser  
+29-03-2018 12:42:05 10 Information Request was rewritten to /UserRegistration/Index
+29-03-2018 12:42:11 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+29-03-2018 12:42:12 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+29-03-2018 12:42:12 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 7700.1506ms
+29-03-2018 12:42:12 2 Information Request finished in 7770.2839ms 200 text/html; charset=utf-8

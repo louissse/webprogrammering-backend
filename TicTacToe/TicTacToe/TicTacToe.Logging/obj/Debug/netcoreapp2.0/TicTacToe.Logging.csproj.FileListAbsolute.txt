@@ -4,3 +4,6 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.csproj.CoreCompileInputs.cache
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.AssemblyInfoInputs.cache
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.AssemblyInfo.cs
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\bin\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.pdb

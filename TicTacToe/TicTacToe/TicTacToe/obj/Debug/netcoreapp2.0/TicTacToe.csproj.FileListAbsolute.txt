@@ -9,3 +9,5 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\TicTacToe.pdb
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\TicTacToe.Logging.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
