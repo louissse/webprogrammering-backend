@@ -1,0 +1,19 @@
+31-03-2018 13:27:30 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+31-03-2018 13:28:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+3/31/2018 1:28:00 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 1:28:04 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 1:28:06 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 5444.9349ms
+31-03-2018 13:28:06 2 Information Request finished in 6055.234ms 200 text/html; charset=utf-8
+31-03-2018 13:28:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+31-03-2018 13:28:06 2 Information Request finished in 126.3298ms 404 text/plain
+31-03-2018 13:28:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/Home/SetCulture?culture=DA  
+31-03-2018 13:28:12 1 Information Executing action method TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) with arguments (DA) - ModelState is Valid
+31-03-2018 13:28:12 1 Information Executing RedirectResult, redirecting to /.
+31-03-2018 13:28:12 2 Information Executed action TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) in 111.4745ms
+31-03-2018 13:28:12 3 Information Session started; Key:2715fc39-0a4b-0973-2f40-5c603d7abec1, Id:fe358258-e968-d799-fe59-f5858fad1696
+31-03-2018 13:28:12 2 Information Request finished in 435.4697ms 302 
+31-03-2018 13:28:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+31-03-2018 13:28:18 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+31-03-2018 13:28:18 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+31-03-2018 13:28:18 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 36.0434ms
+31-03-2018 13:28:18 2 Information Request finished in 5875.5675ms 200 text/html; charset=utf-8

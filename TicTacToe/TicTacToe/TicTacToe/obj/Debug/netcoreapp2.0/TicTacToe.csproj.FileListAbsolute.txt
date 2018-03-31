@@ -11,3 +11,8 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.pdb
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\TicTacToe.Logging.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Views.Home.Index.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.csproj.GenerateResource.Cache
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\da\TicTacToe.resources.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Views.Home.Index.da.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\da\TicTacToe.resources.dll

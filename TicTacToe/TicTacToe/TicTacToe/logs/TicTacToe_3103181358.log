@@ -1,0 +1,8 @@
+31-03-2018 11:58:57 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+31-03-2018 11:58:59 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+3/31/2018 11:59:00 AM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 11:59:05 AM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 11:59:07 AM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 7029.3972ms
+31-03-2018 11:59:07 2 Information Request finished in 8132.7054ms 200 text/html; charset=utf-8
+31-03-2018 11:59:07 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+31-03-2018 11:59:07 2 Information Request finished in 50.5018ms 404 text/plain

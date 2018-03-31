@@ -32,6 +32,11 @@
         "runtime": {
           "TicTacToe.dll": {}
         },
+        "resources": {
+          "da/TicTacToe.resources.dll": {
+            "locale": "da"
+          }
+        },
         "compile": {
           "TicTacToe.dll": {}
         }

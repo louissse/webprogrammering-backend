@@ -7,16 +7,19 @@ using Microsoft.AspNetCore.Mvc;
 using TicTacToe.Models;
 using TicTacToe.Services;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
 
 namespace TicTacToe.Controllers
 {
     public class GameInvitationController : Controller
     {
+        private IStringLocalizer<GameInvitationController> _stringLocalizer;
         private IUserService _userService;
 
-        public GameInvitationController(IUserService userService)
+        public GameInvitationController(IUserService userService, IStringLocalizer<GameInvitationController> stringLocalizer)
         {
             _userService = userService;
+            _stringLocalizer = stringLocalizer;
         }
 
         [HttpGet]
@@ -51,6 +54,14 @@ namespace TicTacToe.Controllers
             var gameInvitation = gameInvitationService.Get(id).Result;
             return View(gameInvitation);
         }
+        //    Example of localization in controller (not view) String Localizer 
+        //    [HttpPost]
+        //    public IActionResult Index(GameInvitationModel gameInvitationModel)
+        //    {
+        //        return Content(_stringLocalizer[
+        //        "GameInvitationConfirmationMessage",
+        //        gameInvitationModel.EmailTo]);
+        //    }
 
+        }
     }
-}

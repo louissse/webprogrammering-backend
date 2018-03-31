@@ -1,0 +1,32 @@
+31-03-2018 13:08:00 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+31-03-2018 13:10:48 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+31-03-2018 13:10:48 2 Information Accessing expired session, Key:60e46f0d-0ec5-cb83-5e7c-98726b8960f5
+3/31/2018 1:10:48 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 1:10:51 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 1:10:53 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 4890.1621ms
+31-03-2018 13:10:53 2 Information Request finished in 5629.7538ms 200 text/html; charset=utf-8
+31-03-2018 13:10:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+31-03-2018 13:10:54 2 Information Accessing expired session, Key:60e46f0d-0ec5-cb83-5e7c-98726b8960f5
+31-03-2018 13:10:54 2 Information Request finished in 270.9588ms 404 text/plain
+31-03-2018 13:10:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/Home/SetCulture?culture=EN  
+3/31/2018 1:10:58 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) with arguments (EN) - ModelState is Valid
+3/31/2018 1:10:58 PM 2 Information Accessing expired session, Key:60e46f0d-0ec5-cb83-5e7c-98726b8960f5
+3/31/2018 1:10:58 PM 1 Information Executing RedirectResult, redirecting to /.
+3/31/2018 1:10:58 PM 2 Information Executed action TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) in 112.8599ms
+31-03-2018 13:10:58 3 Information Session started; Key:60e46f0d-0ec5-cb83-5e7c-98726b8960f5, Id:b61e3224-93b4-32d9-99ef-318cc898ae69
+31-03-2018 13:10:58 2 Information Request finished in 431.689ms 302 
+31-03-2018 13:10:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+3/31/2018 1:11:03 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 1:11:03 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 1:11:03 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 39.0736ms
+31-03-2018 13:11:03 2 Information Request finished in 5269.0994ms 200 text/html; charset=utf-8
+31-03-2018 13:11:09 1 Information Request starting HTTP/1.1 GET http://localhost:49628/Home/SetCulture?culture=DK  
+3/31/2018 1:11:09 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) with arguments (DK) - ModelState is Valid
+3/31/2018 1:11:09 PM 1 Information Executing RedirectResult, redirecting to /.
+3/31/2018 1:11:09 PM 2 Information Executed action TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) in 60.5904ms
+31-03-2018 13:11:09 2 Information Request finished in 127.0858ms 302 
+31-03-2018 13:11:09 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+3/31/2018 1:11:12 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 1:11:12 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 1:11:12 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 26.5881ms
+31-03-2018 13:11:12 2 Information Request finished in 3204.9306ms 200 text/html; charset=utf-8
