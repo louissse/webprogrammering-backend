@@ -15,6 +15,7 @@ using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using TicTacToe.Options;
+using Microsoft.AspNetCore.Mvc.Razor;
 
 namespace TicTacToe
 {
@@ -22,23 +23,42 @@ namespace TicTacToe
     public class Startup
     {
         public IConfiguration _configuration { get; }
+        public IHostingEnvironment _hostingEnvironment { get; }
         public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment)
         {
             _configuration = configuration;
+            _hostingEnvironment = hostingEnvironment;
         }
 
-        public void ConfigureServices(IServiceCollection services)
+        public void ConfigureCommonServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddLocalization(options => options.ResourcesPath = "Localization");
+            //Not using below localization yet
+            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, options => options.ResourcesPath = "Localization").AddDataAnnotationsLocalization();
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IGameInvitationService, GameInvitationService>();
             services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
-            services.AddSingleton<IEmailService, EmailService>();
+            services.AddEmailService(_hostingEnvironment, _configuration);
             services.AddRouting();
             services.AddSession(o =>
             {
                 o.IdleTimeout = TimeSpan.FromMinutes(30);
             });
+        }
+
+        public void ConfigureDevelopmentServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
+        }
+
+        public void ConfigureStagingServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
+        }
+
+        public void ConfigureProductionServices(IServiceCollection services)
+        {
+            ConfigureCommonServices(services);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

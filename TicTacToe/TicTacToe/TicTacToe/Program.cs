@@ -22,7 +22,7 @@ namespace TicTacToe
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .CaptureStartupErrors(true)
-                .UseStartup<Startup>()
+                .UseStartup("TicTacToe")
                 .PreferHostingUrls(true) //Læs op på (side 103)
                 .UseUrls("http://localhost:5000") //Læs op på (side 103)
                 .UseApplicationInsights() //Læs op på (side 103)
