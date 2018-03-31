@@ -35,20 +35,44 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>GameInvitationController.resx</DependentUpon>
     </Compile>
+    <Compile Update="Localization\Models\UserModel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserModel.resx</DependentUpon>
+    </Compile>
     <Compile Update="Localization\Views\Home.Index.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
       <DependentUpon>Home.Index.resx</DependentUpon>
     </Compile>
+    <Compile Update="Localization\Views\UserRegistration.Index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserRegistration.Index.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Localization\Models\UserModel.da.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Models\UserModel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserModel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Localization\Views\Home.Index.da.resx">
       <Generator>ResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Localization\Views\Home.Index.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Home.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.Index.da.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserRegistration.Index.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 

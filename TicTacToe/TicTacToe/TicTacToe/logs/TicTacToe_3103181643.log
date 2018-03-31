@@ -1,0 +1,30 @@
+31-03-2018 14:43:32 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+31-03-2018 14:43:34 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+3/31/2018 2:43:34 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+3/31/2018 2:43:38 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+3/31/2018 2:43:40 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 5950.9854ms
+31-03-2018 14:43:40 2 Information Request finished in 6341.8541ms 200 text/html; charset=utf-8
+31-03-2018 14:43:40 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+31-03-2018 14:43:41 2 Information Request finished in 23.2302ms 404 text/plain
+31-03-2018 14:43:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/Home/SetCulture?culture=DA  
+31-03-2018 14:43:58 1 Information Executing action method TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) with arguments (DA) - ModelState is Valid
+31-03-2018 14:43:58 1 Information Executing RedirectResult, redirecting to /.
+31-03-2018 14:43:59 2 Information Executed action TicTacToe.Controllers.HomeController.SetCulture (TicTacToe) in 85.8038ms
+31-03-2018 14:43:59 3 Information Session started; Key:8836ccde-c985-27a0-f281-8f9e19dd2c19, Id:248a93f8-0bda-6936-a8b4-aff7cd0758a7
+31-03-2018 14:43:59 2 Information Request finished in 404.143ms 302 
+31-03-2018 14:43:59 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+31-03-2018 14:43:59 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+31-03-2018 14:43:59 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+31-03-2018 14:43:59 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 88.1321ms
+31-03-2018 14:43:59 2 Information Request finished in 294.8538ms 200 text/html; charset=utf-8
+31-03-2018 14:44:01 1 Information Request starting HTTP/1.1 GET http://localhost:49628/NewUser  
+31-03-2018 14:44:01 10 Information Request was rewritten to /UserRegistration/Index
+31-03-2018 14:44:01 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+31-03-2018 14:44:02 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+31-03-2018 14:44:02 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 1182.709ms
+31-03-2018 14:44:02 2 Information Request finished in 1245.2851ms 200 text/html; charset=utf-8
+31-03-2018 14:44:05 1 Information Request starting HTTP/1.1 POST http://localhost:49628/UserRegistration application/x-www-form-urlencoded 220
+31-03-2018 14:44:05 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments (TicTacToe.Models.UserModel) - ModelState is Invalid
+31-03-2018 14:44:05 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+31-03-2018 14:44:05 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 119.344ms
+31-03-2018 14:44:06 2 Information Request finished in 507.3433ms 200 text/html; charset=utf-8

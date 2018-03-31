@@ -16,3 +16,7 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\bin\Debug\netcoreapp2.0\da\TicTacToe.resources.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Views.Home.Index.da.resources
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\da\TicTacToe.resources.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Views.UserRegistration.Index.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Views.UserRegistration.Index.da.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Models.UserModel.resources
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\obj\Debug\netcoreapp2.0\TicTacToe.Localization.Models.UserModel.da.resources
