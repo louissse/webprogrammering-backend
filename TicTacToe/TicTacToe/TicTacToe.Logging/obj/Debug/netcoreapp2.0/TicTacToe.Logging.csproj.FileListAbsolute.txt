@@ -6,3 +6,4 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\bin\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.Logging\obj\Debug\netcoreapp2.0\TicTacToe.Logging.csprojResolveAssemblyReference.cache

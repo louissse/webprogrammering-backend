@@ -45,6 +45,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Home.Index.resx</DependentUpon>
     </Compile>
+    <Compile Update="Localization\Views\Leaderboard.Index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Leaderboard.Index.resx</DependentUpon>
+    </Compile>
     <Compile Update="Localization\Views\UserRegistration.Index.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -66,6 +71,13 @@
     <EmbeddedResource Update="Localization\Views\Home.Index.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Home.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Leaderboard.Index.da.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Leaderboard.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Leaderboard.Index.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Update="Localization\Views\UserRegistration.Index.da.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -37,5 +37,11 @@ namespace TicTacToe.Services
             };
             return Task.CompletedTask;
         }
+
+        public Task<IEnumerable<UserModel>> GetTopUsers(int numberOfUsers)
+        {
+            return Task.Run(() => (IEnumerable<UserModel>) _userStore.OrderBy(x =>
+            x.Score).Take(numberOfUsers).ToList());
+        }
     }
 }
