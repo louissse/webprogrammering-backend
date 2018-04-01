@@ -16,6 +16,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using TicTacToe.Options;
 using Microsoft.AspNetCore.Mvc.Razor;
+using TicTacToe.ViewEngines;
 
 namespace TicTacToe
 {
@@ -37,6 +38,8 @@ namespace TicTacToe
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IGameInvitationService, GameInvitationService>();
             services.AddSingleton<IGameSessionService, GameSessionService>();
+            services.AddTransient<IEmailTemplateRenderService, EmailTemplateRenderService>();
+            services.AddTransient<IEmailViewEngine, EmailViewEngine>(); //Note that it is required to register the EmailViewEngine and the EmailTemplateRenderService as transient because of the HTTP Context Accessor injection.
             services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
             services.AddEmailService(_hostingEnvironment, _configuration);
             services.AddRouting();
@@ -68,7 +71,8 @@ namespace TicTacToe
             {
                 app.UseDeveloperExceptionPage();
                 app.UseBrowserLink();
-            } else
+            }
+            else
             {
                 app.UseExceptionHandler("/Home/Error");
             }
@@ -115,6 +119,9 @@ namespace TicTacToe
             //Use the MVC model
             app.UseMvc(routes =>
             {
+                routes.MapRoute(
+                    name: "areaRoute", 
+                    template: "{area:exists}/{controller=Home}/{action=Index}");
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");

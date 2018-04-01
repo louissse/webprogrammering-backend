@@ -27,9 +27,12 @@ namespace TicTacToe.Controllers
         {
             var gameInvitationModel = new GameInvitationModel
             {
-                InvitedBy = email
+                InvitedBy = email,
+                Id = Guid.NewGuid()
             };
-            HttpContext.Session.SetString("email", email);
+            Request.HttpContext.Session.SetString("email", email);
+            var user = await _userService.GetUserByEmail(email);
+            Request.HttpContext.Session.SetString("displayName", $"{user.FirstName} {user.LastName}");
             return View(gameInvitationModel);
         }
         [HttpPost]

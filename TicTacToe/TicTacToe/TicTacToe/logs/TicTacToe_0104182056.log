@@ -1,0 +1,89 @@
+01-04-2018 18:56:41 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+01-04-2018 18:56:44 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+4/1/2018 6:56:45 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/1/2018 6:56:50 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/1/2018 6:56:53 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 8280.0029ms
+01-04-2018 18:56:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=dmFKojBZGESLtCn5iuu-DCLJwLHxMLkXuV7EdgOovUs  
+01-04-2018 18:56:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts2.js  
+01-04-2018 18:56:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts1.js  
+01-04-2018 18:56:53 2 Information Request finished in 9245.4668ms 200 text/html; charset=utf-8
+01-04-2018 18:56:54 6 Information The file /js/site.js was not modified
+01-04-2018 18:56:54 6 Information The file /app/js/scripts2.js was not modified
+01-04-2018 18:56:54 6 Information The file /app/js/scripts1.js was not modified
+01-04-2018 18:56:54 2 Information Request finished in 639.5803ms 304 application/javascript
+01-04-2018 18:56:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+01-04-2018 18:56:54 2 Information Request finished in 68.9167ms 404 text/plain
+01-04-2018 18:56:54 2 Information Request finished in 734.9572ms 304 application/javascript
+01-04-2018 18:56:54 2 Information Request finished in 661.0028ms 304 application/javascript
+01-04-2018 18:57:13 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+4/1/2018 6:57:13 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/1/2018 6:57:13 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/1/2018 6:57:14 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 64.4457ms
+01-04-2018 18:57:14 2 Information Request finished in 137.7823ms 200 text/html; charset=utf-8
+01-04-2018 18:57:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/css/site.css  
+01-04-2018 18:57:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=dmFKojBZGESLtCn5iuu-DCLJwLHxMLkXuV7EdgOovUs  
+01-04-2018 18:57:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/bootstrap/dist/css/bootstrap.css  
+01-04-2018 18:57:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/jquery/dist/jquery.js  
+01-04-2018 18:57:14 2 Information Sending file. Request path: '/lib/bootstrap/dist/css/bootstrap.css'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\lib\bootstrap\dist\css\bootstrap.css'
+01-04-2018 18:57:14 2 Information Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\js\site.js'
+01-04-2018 18:57:14 2 Information Request finished in 661.8096ms 200 application/javascript
+01-04-2018 18:57:15 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts1.js  
+01-04-2018 18:57:15 2 Information Sending file. Request path: '/css/site.css'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\css\site.css'
+01-04-2018 18:57:15 1 Information Request starting HTTP/1.1 GET http://localhost:49628/app/js/scripts2.js  
+01-04-2018 18:57:15 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/bootstrap/dist/js/bootstrap.js  
+01-04-2018 18:57:15 2 Information Sending file. Request path: '/app/js/scripts2.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\app\js\scripts2.js'
+01-04-2018 18:57:15 2 Information Sending file. Request path: '/lib/bootstrap/dist/js/bootstrap.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\lib\bootstrap\dist\js\bootstrap.js'
+01-04-2018 18:57:15 2 Information Sending file. Request path: '/lib/jquery/dist/jquery.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\lib\jquery\dist\jquery.js'
+01-04-2018 18:57:15 2 Information Request finished in 1304.4803ms 200 text/css
+01-04-2018 18:57:15 2 Information Request finished in 407.0661ms 200 application/javascript
+01-04-2018 18:57:15 2 Information Sending file. Request path: '/app/js/scripts1.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\app\js\scripts1.js'
+01-04-2018 18:57:15 2 Information Request finished in 1520.8558ms 200 text/css
+01-04-2018 18:57:15 2 Information Request finished in 1142.9373ms 200 application/javascript
+01-04-2018 18:57:15 2 Information Request finished in 456.4305ms 200 application/javascript
+01-04-2018 18:57:15 2 Information Request finished in 1783.8723ms 200 application/javascript
+01-04-2018 18:57:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+01-04-2018 18:57:16 2 Information Request finished in 48.3779ms 404 text/plain
+01-04-2018 18:57:25 1 Information Request starting HTTP/1.1 GET http://localhost:49628/NewUser  
+01-04-2018 18:57:25 10 Information Request was rewritten to /UserRegistration/Index
+4/1/2018 6:57:25 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/1/2018 6:57:26 PM 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+4/1/2018 6:57:26 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 1191.8942ms
+01-04-2018 18:57:26 2 Information Request finished in 1246.5587ms 200 text/html; charset=utf-8
+01-04-2018 18:57:36 1 Information Request starting HTTP/1.1 POST http://localhost:49628/UserRegistration application/x-www-form-urlencoded 263
+4/1/2018 6:57:36 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments (TicTacToe.Models.UserModel) - ModelState is Valid
+4/1/2018 6:57:36 PM 1 Information Executing RedirectResult, redirecting to /UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com.
+4/1/2018 6:57:36 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 374.471ms
+01-04-2018 18:57:36 2 Information Request finished in 493.0056ms 302 
+01-04-2018 18:57:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com  
+4/1/2018 6:57:36 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+4/1/2018 6:57:36 PM 0 Information ##Start## Email confirmation process for lhoepfner@gmail.com
+4/1/2018 6:57:36 PM 0 Information ##Start sendEmail## Start sending Email to lhoepfner@gmail.com
+4/1/2018 6:57:38 PM 0 Error Cannot send email System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at TicTacToe.Services.EmailService.SendEmail(String emailTo, String subject, String message) in C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\Services\EmailService.cs:line 37
+4/1/2018 6:57:38 PM 1 Information Executing ViewResult, running view at path /Views/UserRegistration/EmailConfirmation.cshtml.
+4/1/2018 6:57:38 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) in 2197.4127ms
+01-04-2018 18:57:38 2 Information Request finished in 2281.5521ms 200 text/html; charset=utf-8
+01-04-2018 18:57:40 1 Information Request starting HTTP/1.1 GET http://localhost:49628/CheckEmailConfirmationStatus  
+01-04-2018 18:57:41 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation?email=lhoepfner@gmail.com  
+4/1/2018 6:57:41 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+4/1/2018 6:57:41 PM 1 Information Executing ViewResult, running view at path /Views/GameInvitation/Index.cshtml.
+01-04-2018 18:57:41 2 Information Request finished in 666.1006ms 101 
+4/1/2018 6:57:42 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) in 1647.3495ms
+01-04-2018 18:57:42 3 Information Session started; Key:f2415e37-0cb4-43b3-9238-e90d05e8cd9e, Id:07a78ab1-501d-d316-47b7-ba6afab9457c
+01-04-2018 18:57:42 2 Information Request finished in 1799.0262ms 200 text/html; charset=utf-8
+01-04-2018 18:57:42 1 Information Request starting HTTP/1.1 GET http://localhost:49628/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2  
+01-04-2018 18:57:43 2 Information Sending file. Request path: '/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\lib\bootstrap\dist\fonts\glyphicons-halflings-regular.woff2'
+01-04-2018 18:57:43 2 Information Request finished in 71.8795ms 200 font/woff2

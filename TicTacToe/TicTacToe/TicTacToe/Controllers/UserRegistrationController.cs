@@ -7,6 +7,7 @@ using TicTacToe.Services;
 using TicTacToe.Models;
 using Microsoft.AspNetCore.Mvc.Routing;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace TicTacToe.Controllers
 {
@@ -56,7 +57,14 @@ namespace TicTacToe.Controllers
                 Host = Request.Host.ToString()
             };
 
-            var message = $"Thank you for your registration on our web site, please click here to confirm your email " + $"{Url.Action(urlAction)}";
+            var userRegistrationEmail = new UserRegistrationEmailModel
+            {
+                DisplayName = $"{user.FirstName} {user.LastName}",
+                Email = email,
+                ActionUrl = Url.Action(urlAction)
+            };
+            var emailRenderService = HttpContext.RequestServices.GetService<IEmailTemplateRenderService>();
+            var message = await emailRenderService.RenderTemplate("EmailTemplates/UserRegistrationEmail", userRegistrationEmail, Request.Host.ToString());
 
             try
             {
