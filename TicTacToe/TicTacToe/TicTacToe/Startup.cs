@@ -36,6 +36,7 @@ namespace TicTacToe
             services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, options => options.ResourcesPath = "Localization").AddDataAnnotationsLocalization();
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IGameInvitationService, GameInvitationService>();
+            services.AddSingleton<IGameSessionService, GameSessionService>();
             services.Configure<EmailServiceOptions>(_configuration.GetSection("Email"));
             services.AddEmailService(_hostingEnvironment, _configuration);
             services.AddRouting();
