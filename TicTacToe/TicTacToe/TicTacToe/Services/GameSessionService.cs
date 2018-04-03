@@ -42,5 +42,40 @@ namespace TicTacToe.Services
             _sessions.Add(session);
             return session;
         }
+
+        public async Task<GameSessionModel> AddTurn(Guid id, string email, int x, int y)
+        {
+            var gameSession = _sessions.FirstOrDefault(session => session.Id == id);
+            List<Models.TurnModel> turns;
+
+            if (gameSession.Turns != null && gameSession.Turns.Any())
+            {
+                turns = new List<Models.TurnModel>(gameSession.Turns);
+            }
+            else
+            {
+                turns = new List<TurnModel>();
+                turns.Add(new TurnModel
+                {
+                    User = await _UserService.GetUserByEmail(email),
+                    X = x,
+                    Y = y
+                });
+            }
+            if (gameSession.User1?.Email == email)
+            {
+                gameSession.ActiveUser = gameSession.User2;
+            }
+            else
+            {
+                gameSession.ActiveUser = gameSession.User1;
+            }
+            gameSession.TurnFinished = true;
+            _sessions = new ConcurrentBag<GameSessionModel>(_sessions.Where(u => u.Id != id))
+            {
+                gameSession
+            };
+            return gameSession;
+        }
     }
 }

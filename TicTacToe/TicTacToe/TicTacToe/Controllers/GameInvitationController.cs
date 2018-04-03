@@ -36,18 +36,33 @@ namespace TicTacToe.Controllers
             return View(gameInvitationModel);
         }
         [HttpPost]
-        public IActionResult Index(GameInvitationModel gameInvitationModel, [FromServices]IEmailService emailService)
+        public async Task<IActionResult> Index(GameInvitationModel gameInvitationModel, [FromServices]IEmailService emailService)
         {
             var gameInvitationService = Request.HttpContext.RequestServices.GetService<IGameInvitationService>();
             if (ModelState.IsValid)
             {
-                emailService.SendEmail(gameInvitationModel.EmailTo, "Invitation for playing a Tic-Tac-Toe game",
-                    string.Format($"Hello, you have been invited to play the Tic-Tac-Toe game by {0}. For joining the game, please click here {1}",
-                    gameInvitationModel.InvitedBy, Url.Action("GameInvitationConfirmation", "GameInvitation",
-                        new { gameInvitationModel.InvitedBy, gameInvitationModel.EmailTo }, Request.Scheme, Request.Host.ToString())));
+                try
+                {
+                    var invitationModel = new InvitationEmailModel
+                    {
+                        DisplayName = $"{gameInvitationModel.EmailTo}",
+                        InvitedBy = await _userService.GetUserByEmail(gameInvitationModel.InvitedBy),
+                        ConfirmationUrl = Url.Action("ConfirmGameInvitation", "GameInvitation",
+                            new { id = gameInvitationModel.Id }, Request.Scheme, Request.Host.ToString()),
+                        InvitedDate = gameInvitationModel.ConfirmationDate
+                    };
+
+                    var emailRenderService = HttpContext.RequestServices.GetService<IEmailTemplateRenderService>();
+                    var message = await emailRenderService.RenderTemplate<InvitationEmailModel>("EmailTemplates/InvitationEmail", invitationModel, Request.Host.ToString());
+                    await emailService.SendEmail(gameInvitationModel.EmailTo, _stringLocalizer["Invitation for playing a Tic-Tac-Toe game"], message);
+                }
+                catch
+                {
+
+                }
 
                 var invitation = gameInvitationService.Add(gameInvitationModel).Result;
-                return RedirectToAction("GameInvitationConfirmation", new { id = invitation.Id });
+                return RedirectToAction("GameInvitationConfirmation", new { id = gameInvitationModel.Id });
             }
             return View(gameInvitationModel);
         }
@@ -65,6 +80,14 @@ namespace TicTacToe.Controllers
         //        "GameInvitationConfirmationMessage",
         //        gameInvitationModel.EmailTo]);
         //    }
-
+        [HttpGet]
+        public IActionResult ConfirmGameInvitation(Guid id, [FromServices]IGameInvitationService gameInvitationService)
+        {
+            var gameInvitation = gameInvitationService.Get(id).Result;
+            gameInvitation.IsConfirmed = true;
+            gameInvitation.ConfirmationDate = DateTime.Now;
+            gameInvitationService.Update(gameInvitation);
+            return RedirectToAction("Index", "GameSession", new { id = id });
         }
+    }
     }

@@ -29,5 +29,12 @@ namespace TicTacToe.Controllers
             }
             return View(session);
         }
+
+        public async Task<IActionResult> SetPosition(Guid id, string email, int x, int y)
+        {
+            var gameSession = await _gameSessionService.GetGameSession(id);
+            await _gameSessionService.AddTurn(gameSession.Id, email, x, y);
+            return View("Index", gameSession);
+        }
     }
 }
