@@ -17,10 +17,10 @@ namespace TicTacToe.Services
 
         public Task<GameInvitationModel> Add(GameInvitationModel gameInvitationModel)
         {
-            gameInvitationModel.Id = Guid.NewGuid(); //This might be a bug
             _gameInvitations.Add(gameInvitationModel);
             return Task.FromResult(gameInvitationModel);
         }
+
         public Task Update(GameInvitationModel gameInvitationModel)
         {
             _gameInvitations = new ConcurrentBag<GameInvitationModel>(_gameInvitations.Where(x => x.Id != gameInvitationModel.Id))

@@ -5,6 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using TicTacToe.Services;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using Newtonsoft.Json;
+using System.Text;
+using TicTacToe.Models;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -30,11 +34,41 @@ namespace TicTacToe.Controllers
             return View(session);
         }
 
-        public async Task<IActionResult> SetPosition(Guid id, string email, int x, int y)
+        [Produces("application/json")]
+        [HttpPost("/restapi/v1/SetGamePosition/{sessionId}")]
+        public async Task<IActionResult> SetPosition([FromRoute]Guid sessionId)
         {
-            var gameSession = await _gameSessionService.GetGameSession(id);
-            await _gameSessionService.AddTurn(gameSession.Id, email, x, y);
-            return View("Index", gameSession);
+            if (sessionId != Guid.Empty)
+            {
+                using (var reader = new StreamReader(Request.Body, Encoding.UTF8, true, 1024, true))
+                {
+                    var bodyString = reader.ReadToEnd();
+                    if (string.IsNullOrEmpty(bodyString))
+                        return BadRequest("Body is empty");
+
+                    var turn = JsonConvert.DeserializeObject<TurnModel>(bodyString);
+
+                    turn.User = await HttpContext.RequestServices.GetService<IUserService>().GetUserByEmail(turn.Email);
+                    turn.UserId = turn.User.Id;
+                    if (turn == null)
+                        return BadRequest("You must pass a TurnModel object in your body");
+
+                    var gameSession = await _gameSessionService.GetGameSession(sessionId);
+
+                    if (gameSession == null)
+                        return BadRequest($"Cannot find Game Session {sessionId}");
+
+                    if (gameSession.ActiveUser.Email != turn.User.Email)
+                        return BadRequest($"{turn.User.Email} cannot play this turn");
+
+                    gameSession = await _gameSessionService.AddTurn(gameSession.Id, turn.User.Email, turn.X, turn.Y);
+                    if (gameSession != null && gameSession.ActiveUser.Email != turn.User.Email)
+                        return Ok(gameSession);
+                    else
+                        return BadRequest("Cannot save turn");
+                }
+            }
+            return BadRequest("Id is empty");
         }
     }
 }

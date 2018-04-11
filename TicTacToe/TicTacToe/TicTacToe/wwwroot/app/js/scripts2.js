@@ -1,9 +1,10 @@
-﻿function CheckEmailConfirmationStatus(email) {
-    $.get("/CheckEmailConfirmationStatus?email=" + email, function (data) {
+﻿function CheckEmailConfirmationStatus(id) {
+    $.get("/CheckEmailConfirmationStatus?id=" + id, function (data) {
         if (data === "OK") {
-            if (interval !== null)
+            if (interval !== null) {
                 clearInterval(interval);
-            window.location.href = "/GameInvitation?email=" + email;
+            }
+            window.location.href = "/GameSession/Index/" + id;
         }
     });
 }
