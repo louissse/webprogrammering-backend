@@ -70,5 +70,88 @@ namespace TicTacToe.Controllers
             }
             return BadRequest("Id is empty");
         }
+
+        [Produces("application/json")]
+        [HttpGet("/restapi/v1/GetGameSession/{sessionId}")]
+        public async Task<IActionResult> GetGameSession(Guid sessionId)
+        {
+            if (sessionId != Guid.Empty)
+            {
+                var session = await _gameSessionService.GetGameSession(sessionId);
+                if (session != null)
+                {
+                    return Ok(session);
+                } else
+                {
+                    return NotFound($"can not found session {sessionId}");
+                }
+            } else
+            {
+                return BadRequest("session id is null");
+            }
+        }
+
+        [Produces("application/json")]
+        [HttpGet("/restapi/v1/CheckGameSessionIsFinished/{sessionId}")]
+        public async Task<IActionResult> CheckGameSessionIsFinished(Guid sessionId)
+        {
+            if (sessionId != Guid.Empty)
+            {
+                var session = await _gameSessionService.GetGameSession(sessionId);
+                if (session != null)
+                {
+                    if (session.Turns.Count() == 9)
+                        return Ok("The game was a draw.");
+
+                    var userTurns = session.Turns.Where(x => x.User == session.User1).ToList();
+                    var user1Won = CheckIfUserHasWon(session.User1?.Email, userTurns);
+
+                    if (user1Won)
+                    {
+                        return Ok($"{session.User1.Email} has won the game.");
+                    }
+                    else
+                    {
+                        userTurns = session.Turns.Where(x => x.User == session.User2).ToList();
+                        var user2Won = CheckIfUserHasWon(session.User2?.Email, userTurns);
+
+                        if (user2Won)
+                            return Ok($"{session.User2.Email} has won the game.");
+                        else
+                            return Ok("");
+                    }
+                }
+                else
+                {
+                    return NotFound($"Cannot find session {sessionId}.");
+                }
+            }
+            else
+            {
+                return BadRequest("SessionId is null.");
+            }
+        }
+
+        private bool CheckIfUserHasWon(string email, List<TurnModel> userTurns)
+        {
+            if (userTurns.Any(x => x.X == 0 && x.Y == 0) && userTurns.Any(x => x.X == 1 && x.Y == 0) && userTurns.Any(x => x.X == 2 && x.Y == 0))
+                return true;
+            else if (userTurns.Any(x => x.X == 0 && x.Y == 1) && userTurns.Any(x => x.X == 1 && x.Y == 1) && userTurns.Any(x => x.X == 2 && x.Y == 1))
+                return true;
+            else if (userTurns.Any(x => x.X == 0 && x.Y == 2) && userTurns.Any(x => x.X == 1 && x.Y == 2) && userTurns.Any(x => x.X == 2 && x.Y == 2))
+                return true;
+            else if (userTurns.Any(x => x.X == 0 && x.Y == 0) && userTurns.Any(x => x.X == 0 && x.Y == 1) && userTurns.Any(x => x.X == 0 && x.Y == 2))
+                return true;
+            else if (userTurns.Any(x => x.X == 1 && x.Y == 0) && userTurns.Any(x => x.X == 1 && x.Y == 1) && userTurns.Any(x => x.X == 1 && x.Y == 2))
+                return true;
+            else if (userTurns.Any(x => x.X == 2 && x.Y == 0) && userTurns.Any(x => x.X == 2 && x.Y == 1) && userTurns.Any(x => x.X == 2 && x.Y == 2))
+                return true;
+            else if (userTurns.Any(x => x.X == 0 && x.Y == 0) && userTurns.Any(x => x.X == 1 && x.Y == 1) && userTurns.Any(x => x.X == 2 && x.Y == 2))
+                return true;
+            else if (userTurns.Any(x => x.X == 2 && x.Y == 0) && userTurns.Any(x => x.X == 1 && x.Y == 1) && userTurns.Any(x => x.X == 0 && x.Y == 2))
+                return true;
+            else
+                return false;
+        }
     }
 }

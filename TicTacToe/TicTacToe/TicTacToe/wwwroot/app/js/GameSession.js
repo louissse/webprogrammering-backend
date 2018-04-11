@@ -1,6 +1,7 @@
 ﻿function SetGameSession(gdSessionId, strEmail) {
     window.GameSessionId = gdSessionId;
     window.EmailPlayer = strEmail;
+    window.TurnNumber = 0;
 }
 $(document).ready(function () {
     $(".btn-SetPosition").click(function () {
@@ -20,9 +21,6 @@ function SendPosition(gdSession, strEmail, intX, intY) {
         'contentType': "application/json",
         'data': json,
         'dataType': "json",
-        'type': "POST",
-        'success': function (data) {
-            alert(data);
-        }
+        'type': "POST"
     });
 }

@@ -1,0 +1,769 @@
+11-04-2018 20:21:54 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+11-04-2018 20:21:55 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+4/11/2018 8:21:55 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/11/2018 8:21:59 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/11/2018 8:22:01 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 5582.8994ms
+11-04-2018 20:22:01 2 Information Request finished in 6208.585ms 200 text/html; charset=utf-8
+11-04-2018 20:22:01 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:22:01 2 Information Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\js\site.js'
+11-04-2018 20:22:01 2 Information Request finished in 278.8129ms 200 application/javascript
+11-04-2018 20:22:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+11-04-2018 20:22:02 2 Information Request finished in 30.9712ms 404 text/plain
+11-04-2018 20:22:13 1 Information Request starting HTTP/1.1 GET http://localhost:49628/NewUser  
+11-04-2018 20:22:13 10 Information Request was rewritten to /UserRegistration/Index
+4/11/2018 8:22:13 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/11/2018 8:22:14 PM 1 Information Executing ViewResult, running view at path /Views/UserRegistration/Index.cshtml.
+4/11/2018 8:22:14 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 884.2655ms
+11-04-2018 20:22:14 2 Information Request finished in 1003.6561ms 200 text/html; charset=utf-8
+11-04-2018 20:22:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:22:14 6 Information The file /js/site.js was not modified
+11-04-2018 20:22:14 2 Information Request finished in 90.509ms 304 application/javascript
+11-04-2018 20:22:22 1 Information Request starting HTTP/1.1 POST http://localhost:49628/UserRegistration application/x-www-form-urlencoded 263
+4/11/2018 8:22:22 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) with arguments (TicTacToe.Models.UserModel) - ModelState is Valid
+4/11/2018 8:22:22 PM 1 Information Executing RedirectResult, redirecting to /UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com.
+4/11/2018 8:22:22 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.Index (TicTacToe) in 98.573ms
+11-04-2018 20:22:22 2 Information Request finished in 160.0603ms 302 
+11-04-2018 20:22:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/UserRegistration/EmailConfirmation?Email=lhoepfner@gmail.com  
+4/11/2018 8:22:22 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+4/11/2018 8:22:22 PM 0 Information ##Start## Email confirmation process for lhoepfner@gmail.com
+4/11/2018 8:22:23 PM 0 Information ##Start sendEmail## Start sending Email to lhoepfner@gmail.com
+4/11/2018 8:22:24 PM 0 Error Cannot send email System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at TicTacToe.Services.EmailService.SendEmail(String emailTo, String subject, String message) in C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\Services\EmailService.cs:line 37
+4/11/2018 8:22:24 PM 1 Information Executing ViewResult, running view at path /Views/UserRegistration/EmailConfirmation.cshtml.
+4/11/2018 8:22:24 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.EmailConfirmation (TicTacToe) in 2165.9939ms
+11-04-2018 20:22:24 2 Information Request finished in 2431.9843ms 200 text/html; charset=utf-8
+11-04-2018 20:22:24 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:22:25 6 Information The file /js/site.js was not modified
+11-04-2018 20:22:25 2 Information Request finished in 222.0395ms 304 application/javascript
+11-04-2018 20:22:25 1 Information Request starting HTTP/1.1 GET http://localhost:49628/CheckEmailConfirmationStatus  
+11-04-2018 20:22:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/UserRegistration/ConfirmEmail?email=lhoepfner@gmail.com  
+4/11/2018 8:22:53 PM 1 Information Executing action method TicTacToe.Controllers.UserRegistrationController.ConfirmEmail (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+4/11/2018 8:22:58 PM 1 Information Executing RedirectResult, redirecting to /.
+4/11/2018 8:22:58 PM 2 Information Executed action TicTacToe.Controllers.UserRegistrationController.ConfirmEmail (TicTacToe) in 5174.447ms
+11-04-2018 20:22:58 2 Information Request finished in 5346.742ms 302 
+11-04-2018 20:22:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+11-04-2018 20:22:58 2 Information Accessing expired session, Key:fe3e37ec-1886-ec0d-7980-f0abb9da26e3
+4/11/2018 8:22:58 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/11/2018 8:22:58 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/11/2018 8:22:58 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 36.3003ms
+11-04-2018 20:22:59 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:22:59 2 Information Request finished in 124.8125ms 200 text/html; charset=utf-8
+11-04-2018 20:23:05 2 Information Sending file. Request path: '/js/site.js'. Physical path: 'C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\wwwroot\js\site.js'
+11-04-2018 20:23:05 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation?email=lhoepfner@gmail.com  
+11-04-2018 20:23:05 2 Information Request finished in 6277.1161ms 200 application/javascript
+11-04-2018 20:23:05 2 Information Request finished in 40197.9606ms 101 
+4/11/2018 8:23:05 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) with arguments (lhoepfner@gmail.com) - ModelState is Valid
+4/11/2018 8:23:05 PM 1 Information Executing ViewResult, running view at path /Views/GameInvitation/Index.cshtml.
+4/11/2018 8:23:06 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) in 1054.2578ms
+11-04-2018 20:23:06 3 Information Session started; Key:8f9f0d03-5493-b844-12b9-270fb62a9832, Id:2e7d4277-8a0b-690b-6ced-ea7948a9ecf1
+11-04-2018 20:23:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:23:06 2 Information Request finished in 1225.3248ms 200 text/html; charset=utf-8
+11-04-2018 20:23:06 6 Information The file /js/site.js was not modified
+11-04-2018 20:23:06 2 Information Request finished in 150.0055ms 304 application/javascript
+11-04-2018 20:23:24 1 Information Request starting HTTP/1.1 POST http://localhost:49628/GameInvitation application/x-www-form-urlencoded 279
+4/11/2018 8:23:24 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) with arguments (TicTacToe.Models.GameInvitationModel, TicTacToe.Services.EmailService) - ModelState is Valid
+4/11/2018 8:23:24 PM 0 Information ##Start sendEmail## Start sending Email to loh@nextkbh.dk
+4/11/2018 8:23:25 PM 0 Error Cannot send email System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Internals.SocketExceptionFactory+ExtendedSocketException: Der kunne ikke oprettes forbindelse, fordi destinationscomputeren aktivt nægtede det 127.0.0.1:25
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Connect(EndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(IPEndPoint remoteEP)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at TicTacToe.Services.EmailService.SendEmail(String emailTo, String subject, String message) in C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe\Services\EmailService.cs:line 37
+4/11/2018 8:23:25 PM 1 Information Executing RedirectResult, redirecting to /GameInvitation/GameInvitationConfirmation/b556bf57-c2e8-4ce1-b931-b0eb78321726.
+4/11/2018 8:23:25 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationController.Index (TicTacToe) in 1656.414ms
+11-04-2018 20:23:26 2 Information Request finished in 1726.6347ms 302 
+11-04-2018 20:23:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation/GameInvitationConfirmation/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:26 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.GameInvitationConfirmation (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726, TicTacToe.Services.GameInvitationService) - ModelState is Valid
+4/11/2018 8:23:26 PM 1 Information Executing ViewResult, running view at path /Views/GameInvitation/GameInvitationConfirmation.cshtml.
+4/11/2018 8:23:26 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationController.GameInvitationConfirmation (TicTacToe) in 662.9283ms
+11-04-2018 20:23:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:23:26 2 Information Request finished in 852.3155ms 200 text/html; charset=utf-8
+11-04-2018 20:23:27 6 Information The file /js/site.js was not modified
+11-04-2018 20:23:27 2 Information Request finished in 206.7717ms 304 application/javascript
+11-04-2018 20:23:27 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitationConfirmation  
+11-04-2018 20:23:51 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameInvitation/ConfirmGameInvitation/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+11-04-2018 20:23:51 2 Information Accessing expired session, Key:fe3e37ec-1886-ec0d-7980-f0abb9da26e3
+4/11/2018 8:23:51 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationController.ConfirmGameInvitation (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726, TicTacToe.Services.GameInvitationService) - ModelState is Valid
+4/11/2018 8:23:51 PM 1 Information Executing RedirectResult, redirecting to /GameSession/Index/b556bf57-c2e8-4ce1-b931-b0eb78321726.
+4/11/2018 8:23:51 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationController.ConfirmGameInvitation (TicTacToe) in 34.9951ms
+11-04-2018 20:23:51 3 Information Session started; Key:fe3e37ec-1886-ec0d-7980-f0abb9da26e3, Id:7f0bcf44-412c-3130-dcb2-70cc2c03558d
+11-04-2018 20:23:51 2 Information Request finished in 237.5603ms 302 
+11-04-2018 20:23:51 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameSession/Index/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:51 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.Index (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+11-04-2018 20:23:51 2 Information Request finished in 24912.5317ms 101 
+11-04-2018 20:23:52 1 Information Request starting HTTP/1.1 GET http://localhost:49628/GameSession/Index/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:52 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.Index (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:23:52 PM 1 Information Executing ViewResult, running view at path /Views/GameSession/Index.cshtml.
+4/11/2018 8:23:52 PM 1 Information Executing ViewResult, running view at path /Views/GameSession/Index.cshtml.
+4/11/2018 8:23:53 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.Index (TicTacToe) in 1187.1664ms
+11-04-2018 20:23:53 2 Information Request finished in 1301.5589ms 200 text/html; charset=utf-8
+11-04-2018 20:23:53 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+4/11/2018 8:23:53 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.Index (TicTacToe) in 1968.5065ms
+11-04-2018 20:23:53 6 Information The file /js/site.js was not modified
+11-04-2018 20:23:54 2 Information Request finished in 2300.0063ms 200 text/html; charset=utf-8
+11-04-2018 20:23:54 2 Information Request finished in 823.2079ms 304 application/javascript
+11-04-2018 20:23:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=pheC_Dyq-MY611aDbqBnxFZFpgWEluiIGa0_-pCuxkc  
+11-04-2018 20:23:54 6 Information The file /js/site.js was not modified
+11-04-2018 20:23:54 2 Information Request finished in 314.2846ms 304 application/javascript
+11-04-2018 20:23:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:56 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:23:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:23:56 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 74.7147ms
+11-04-2018 20:23:56 2 Information Request finished in 98.192ms 200 application/json; charset=utf-8
+11-04-2018 20:23:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:56 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:23:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:23:56 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 38.51ms
+11-04-2018 20:23:56 2 Information Request finished in 72.4401ms 200 application/json; charset=utf-8
+11-04-2018 20:23:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:58 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:23:58 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:23:58 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 29.1144ms
+11-04-2018 20:23:58 2 Information Request finished in 59.8309ms 200 application/json; charset=utf-8
+11-04-2018 20:23:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:23:58 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:23:58 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:23:58 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 57.2167ms
+11-04-2018 20:23:58 2 Information Request finished in 79.8078ms 200 application/json; charset=utf-8
+11-04-2018 20:24:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:00 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:00 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:00 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.11ms
+11-04-2018 20:24:00 2 Information Request finished in 111.5637ms 200 application/json; charset=utf-8
+11-04-2018 20:24:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:00 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:00 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:00 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 54.5023ms
+11-04-2018 20:24:00 2 Information Request finished in 164.5872ms 200 application/json; charset=utf-8
+11-04-2018 20:24:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:02 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:02 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:02 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 32.7713ms
+11-04-2018 20:24:02 2 Information Request finished in 62.0483ms 200 application/json; charset=utf-8
+11-04-2018 20:24:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:02 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:02 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:02 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 48.9146ms
+11-04-2018 20:24:02 2 Information Request finished in 98.1348ms 200 application/json; charset=utf-8
+11-04-2018 20:24:04 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:04 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:04 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:04 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 42.8735ms
+11-04-2018 20:24:04 2 Information Request finished in 62.0965ms 200 application/json; charset=utf-8
+11-04-2018 20:24:04 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:04 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:04 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:04 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 35.3356ms
+11-04-2018 20:24:04 2 Information Request finished in 55.5992ms 200 application/json; charset=utf-8
+11-04-2018 20:24:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:06 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:06 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:06 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 44.5187ms
+11-04-2018 20:24:06 2 Information Request finished in 63.993ms 200 application/json; charset=utf-8
+11-04-2018 20:24:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:06 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:06 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:06 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.3014ms
+11-04-2018 20:24:06 2 Information Request finished in 39.7059ms 200 application/json; charset=utf-8
+11-04-2018 20:24:08 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:08 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:08 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:08 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.1236ms
+11-04-2018 20:24:08 2 Information Request finished in 71.7242ms 200 application/json; charset=utf-8
+11-04-2018 20:24:08 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:08 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:08 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:08 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 62.332ms
+11-04-2018 20:24:08 2 Information Request finished in 107.1853ms 200 application/json; charset=utf-8
+11-04-2018 20:24:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:10 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:10 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.9293ms
+11-04-2018 20:24:10 2 Information Request finished in 45.4975ms 200 application/json; charset=utf-8
+11-04-2018 20:24:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:10 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:10 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 20.5106ms
+11-04-2018 20:24:10 2 Information Request finished in 64.7725ms 200 application/json; charset=utf-8
+11-04-2018 20:24:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:12 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:12 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 23.4764ms
+11-04-2018 20:24:12 2 Information Request finished in 41.5905ms 200 application/json; charset=utf-8
+11-04-2018 20:24:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:12 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:12 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 17.6417ms
+11-04-2018 20:24:12 2 Information Request finished in 38.9191ms 200 application/json; charset=utf-8
+11-04-2018 20:24:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:14 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:14 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 26.2271ms
+11-04-2018 20:24:14 2 Information Request finished in 47.0019ms 200 application/json; charset=utf-8
+11-04-2018 20:24:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:14 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:14 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 38.8944ms
+11-04-2018 20:24:14 2 Information Request finished in 74.3ms 200 application/json; charset=utf-8
+11-04-2018 20:24:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:16 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:16 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 25.9592ms
+11-04-2018 20:24:16 2 Information Request finished in 66.1562ms 200 application/json; charset=utf-8
+11-04-2018 20:24:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:16 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:16 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.0097ms
+11-04-2018 20:24:16 2 Information Request finished in 107.1614ms 200 application/json; charset=utf-8
+11-04-2018 20:24:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:18 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:18 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:18 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 27.9018ms
+11-04-2018 20:24:18 2 Information Request finished in 50.7779ms 200 application/json; charset=utf-8
+11-04-2018 20:24:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:18 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:18 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:18 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 16.2184ms
+11-04-2018 20:24:18 2 Information Request finished in 78.2035ms 200 application/json; charset=utf-8
+11-04-2018 20:24:20 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:20 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:20 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:20 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 77.0426ms
+11-04-2018 20:24:20 2 Information Request finished in 114.5367ms 200 application/json; charset=utf-8
+11-04-2018 20:24:20 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:20 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:20 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:20 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 46.6661ms
+11-04-2018 20:24:20 2 Information Request finished in 89.0618ms 200 application/json; charset=utf-8
+11-04-2018 20:24:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:22 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:22 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:22 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 50.5897ms
+11-04-2018 20:24:22 2 Information Request finished in 83.2659ms 200 application/json; charset=utf-8
+11-04-2018 20:24:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:22 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:22 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:22 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 47.6846ms
+11-04-2018 20:24:22 2 Information Request finished in 82.8435ms 200 application/json; charset=utf-8
+11-04-2018 20:24:22 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restApi/v1/SetGamePosition/b556bf57-c2e8-4ce1-b931-b0eb78321726 application/json 47
+4/11/2018 8:24:22 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:22 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:22 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) in 84.1547ms
+11-04-2018 20:24:22 2 Information Request finished in 114.7035ms 200 application/json; charset=utf-8
+11-04-2018 20:24:24 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:24 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:24 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:24 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 58.5735ms
+11-04-2018 20:24:24 2 Information Request finished in 92.9393ms 200 application/json; charset=utf-8
+11-04-2018 20:24:24 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:24 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:24 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:24 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 41.4117ms
+11-04-2018 20:24:24 2 Information Request finished in 58.9008ms 200 application/json; charset=utf-8
+11-04-2018 20:24:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:26 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:26 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:26 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 35.3215ms
+11-04-2018 20:24:26 2 Information Request finished in 60.7034ms 200 application/json; charset=utf-8
+11-04-2018 20:24:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:26 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:26 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:26 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.7248ms
+11-04-2018 20:24:26 2 Information Request finished in 62.7975ms 200 application/json; charset=utf-8
+11-04-2018 20:24:28 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:28 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:28 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:28 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.5318ms
+11-04-2018 20:24:28 2 Information Request finished in 40.7632ms 200 application/json; charset=utf-8
+11-04-2018 20:24:28 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:28 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:28 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:28 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 26.5531ms
+11-04-2018 20:24:28 2 Information Request finished in 55.1909ms 200 application/json; charset=utf-8
+11-04-2018 20:24:30 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:30 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:30 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:30 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 42.0125ms
+11-04-2018 20:24:30 2 Information Request finished in 85.8247ms 200 application/json; charset=utf-8
+11-04-2018 20:24:30 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:30 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:30 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:30 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 71.3457ms
+11-04-2018 20:24:30 2 Information Request finished in 99.9614ms 200 application/json; charset=utf-8
+11-04-2018 20:24:32 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:32 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:32 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:32 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 43.0002ms
+11-04-2018 20:24:32 2 Information Request finished in 91.2817ms 200 application/json; charset=utf-8
+11-04-2018 20:24:32 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:32 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:32 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:32 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.1132ms
+11-04-2018 20:24:32 2 Information Request finished in 44.9424ms 200 application/json; charset=utf-8
+11-04-2018 20:24:34 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:34 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:34 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:34 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 46.0897ms
+11-04-2018 20:24:34 2 Information Request finished in 80.7606ms 200 application/json; charset=utf-8
+11-04-2018 20:24:34 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:34 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:34 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:34 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 83.3099ms
+11-04-2018 20:24:34 2 Information Request finished in 133.2533ms 200 application/json; charset=utf-8
+11-04-2018 20:24:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:36 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:36 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:36 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 30.7391ms
+11-04-2018 20:24:36 2 Information Request finished in 59.4708ms 200 application/json; charset=utf-8
+11-04-2018 20:24:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:36 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:36 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:36 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 48.0626ms
+11-04-2018 20:24:36 2 Information Request finished in 81.5217ms 200 application/json; charset=utf-8
+11-04-2018 20:24:38 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:38 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:38 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:38 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 44.8502ms
+11-04-2018 20:24:38 2 Information Request finished in 64.6727ms 200 application/json; charset=utf-8
+11-04-2018 20:24:38 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:38 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:38 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:38 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 49.6989ms
+11-04-2018 20:24:38 2 Information Request finished in 104.2972ms 200 application/json; charset=utf-8
+11-04-2018 20:24:40 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:40 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:40 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:40 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 29.5077ms
+11-04-2018 20:24:40 2 Information Request finished in 49.0141ms 200 application/json; charset=utf-8
+11-04-2018 20:24:40 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:40 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:40 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:40 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 76.6667ms
+11-04-2018 20:24:40 2 Information Request finished in 104.915ms 200 application/json; charset=utf-8
+11-04-2018 20:24:42 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:42 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:42 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:42 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 61.8136ms
+11-04-2018 20:24:42 2 Information Request finished in 78.0696ms 200 application/json; charset=utf-8
+11-04-2018 20:24:42 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:42 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:42 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:42 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 27.5698ms
+11-04-2018 20:24:42 2 Information Request finished in 87.1972ms 200 application/json; charset=utf-8
+11-04-2018 20:24:44 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:44 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:44 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:44 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.5393ms
+11-04-2018 20:24:44 2 Information Request finished in 42.2548ms 200 application/json; charset=utf-8
+11-04-2018 20:24:44 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:44 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:44 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:44 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 37.3976ms
+11-04-2018 20:24:44 2 Information Request finished in 78.9033ms 200 application/json; charset=utf-8
+11-04-2018 20:24:46 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:46 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:46 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:46 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.792ms
+11-04-2018 20:24:46 2 Information Request finished in 49.1549ms 200 application/json; charset=utf-8
+11-04-2018 20:24:46 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:46 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:46 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:46 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 19.8907ms
+11-04-2018 20:24:46 2 Information Request finished in 44.1582ms 200 application/json; charset=utf-8
+11-04-2018 20:24:48 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:48 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:48 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:48 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.8316ms
+11-04-2018 20:24:48 2 Information Request finished in 57.2496ms 200 application/json; charset=utf-8
+11-04-2018 20:24:48 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:48 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:48 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:48 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 66.2996ms
+11-04-2018 20:24:48 2 Information Request finished in 117.7768ms 200 application/json; charset=utf-8
+11-04-2018 20:24:48 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restApi/v1/SetGamePosition/b556bf57-c2e8-4ce1-b931-b0eb78321726 application/json 47
+4/11/2018 8:24:48 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:48 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:48 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) in 29.9634ms
+11-04-2018 20:24:48 2 Information Request finished in 55.5954ms 400 application/json; charset=utf-8
+11-04-2018 20:24:50 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:50 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:50 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:50 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 58.1247ms
+11-04-2018 20:24:50 2 Information Request finished in 97.6523ms 200 application/json; charset=utf-8
+11-04-2018 20:24:50 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:50 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:50 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:50 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 54.3926ms
+11-04-2018 20:24:50 2 Information Request finished in 91.6132ms 200 application/json; charset=utf-8
+11-04-2018 20:24:52 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:52 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:52 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:52 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.5799ms
+11-04-2018 20:24:52 2 Information Request finished in 44.7884ms 200 application/json; charset=utf-8
+11-04-2018 20:24:52 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:52 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:52 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:52 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 18.8757ms
+11-04-2018 20:24:52 2 Information Request finished in 65.2973ms 200 application/json; charset=utf-8
+11-04-2018 20:24:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:54 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:54 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:54 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 46.1021ms
+11-04-2018 20:24:54 2 Information Request finished in 70.8636ms 200 application/json; charset=utf-8
+11-04-2018 20:24:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:54 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:54 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:54 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.7556ms
+11-04-2018 20:24:54 2 Information Request finished in 44.2298ms 200 application/json; charset=utf-8
+11-04-2018 20:24:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:56 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:56 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 39.0326ms
+11-04-2018 20:24:56 2 Information Request finished in 75.7212ms 200 application/json; charset=utf-8
+11-04-2018 20:24:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:56 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:56 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 57.7466ms
+11-04-2018 20:24:56 2 Information Request finished in 138.1096ms 200 application/json; charset=utf-8
+11-04-2018 20:24:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:58 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:58 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:58 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.0547ms
+11-04-2018 20:24:58 2 Information Request finished in 47.5992ms 200 application/json; charset=utf-8
+11-04-2018 20:24:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:24:58 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:24:58 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:24:58 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 47.033ms
+11-04-2018 20:24:58 2 Information Request finished in 84.7337ms 200 application/json; charset=utf-8
+11-04-2018 20:25:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:00 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:00 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:00 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 28.4432ms
+11-04-2018 20:25:00 2 Information Request finished in 70.5065ms 200 application/json; charset=utf-8
+11-04-2018 20:25:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:00 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:00 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:00 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.3542ms
+11-04-2018 20:25:00 2 Information Request finished in 79.5663ms 200 application/json; charset=utf-8
+11-04-2018 20:25:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:02 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:02 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:02 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 43.4755ms
+11-04-2018 20:25:02 2 Information Request finished in 96.1261ms 200 application/json; charset=utf-8
+11-04-2018 20:25:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:02 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:02 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:02 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 21.5103ms
+11-04-2018 20:25:02 2 Information Request finished in 84.6163ms 200 application/json; charset=utf-8
+11-04-2018 20:25:04 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:04 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:04 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:04 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 20.468ms
+11-04-2018 20:25:04 2 Information Request finished in 38.076ms 200 application/json; charset=utf-8
+11-04-2018 20:25:04 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:04 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:04 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:04 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 47.1883ms
+11-04-2018 20:25:04 2 Information Request finished in 70.1161ms 200 application/json; charset=utf-8
+11-04-2018 20:25:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:06 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:06 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:06 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 62.5923ms
+11-04-2018 20:25:06 2 Information Request finished in 94.1472ms 200 application/json; charset=utf-8
+11-04-2018 20:25:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:06 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:06 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:06 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 169.1909ms
+11-04-2018 20:25:06 2 Information Request finished in 191.9817ms 200 application/json; charset=utf-8
+11-04-2018 20:25:08 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:08 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:08 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:08 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 22.9106ms
+11-04-2018 20:25:08 2 Information Request finished in 41.3823ms 200 application/json; charset=utf-8
+11-04-2018 20:25:08 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:08 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:08 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:08 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 63.2783ms
+11-04-2018 20:25:08 2 Information Request finished in 103.178ms 200 application/json; charset=utf-8
+11-04-2018 20:25:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:10 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:10 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 58.1165ms
+11-04-2018 20:25:10 2 Information Request finished in 79.8351ms 200 application/json; charset=utf-8
+11-04-2018 20:25:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:10 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:10 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 54.2036ms
+11-04-2018 20:25:10 2 Information Request finished in 88.0932ms 200 application/json; charset=utf-8
+11-04-2018 20:25:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:12 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:12 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 31.5446ms
+11-04-2018 20:25:12 2 Information Request finished in 63.5373ms 200 application/json; charset=utf-8
+11-04-2018 20:25:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:12 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:12 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 67.1136ms
+11-04-2018 20:25:12 2 Information Request finished in 110.9681ms 200 application/json; charset=utf-8
+11-04-2018 20:25:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:14 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:14 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 43.2869ms
+11-04-2018 20:25:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+11-04-2018 20:25:14 2 Information Request finished in 114.7061ms 200 application/json; charset=utf-8
+4/11/2018 8:25:14 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:14 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 38.0598ms
+11-04-2018 20:25:14 2 Information Request finished in 113.3502ms 200 application/json; charset=utf-8
+11-04-2018 20:25:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:16 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:16 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.6467ms
+11-04-2018 20:25:16 2 Information Request finished in 58.8235ms 200 application/json; charset=utf-8
+11-04-2018 20:25:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:16 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:16 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 27.0352ms
+11-04-2018 20:25:16 2 Information Request finished in 88.1935ms 200 application/json; charset=utf-8
+11-04-2018 20:25:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:18 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:18 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:18 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 71.6303ms
+11-04-2018 20:25:18 2 Information Request finished in 110.9288ms 200 application/json; charset=utf-8
+11-04-2018 20:25:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:18 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:18 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:18 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 78.4945ms
+11-04-2018 20:25:18 2 Information Request finished in 115.1072ms 200 application/json; charset=utf-8
+11-04-2018 20:25:20 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:20 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:20 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:20 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.6808ms
+11-04-2018 20:25:20 2 Information Request finished in 67.9636ms 200 application/json; charset=utf-8
+11-04-2018 20:25:20 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:20 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:20 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:20 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 212.3064ms
+11-04-2018 20:25:20 2 Information Request finished in 249.0397ms 200 application/json; charset=utf-8
+11-04-2018 20:25:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:22 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:22 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:22 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 45.0717ms
+11-04-2018 20:25:22 2 Information Request finished in 75.2813ms 200 application/json; charset=utf-8
+11-04-2018 20:25:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:22 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:22 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:22 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 101.046ms
+11-04-2018 20:25:22 2 Information Request finished in 168.4366ms 200 application/json; charset=utf-8
+11-04-2018 20:25:24 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:24 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:24 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:24 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.0361ms
+11-04-2018 20:25:24 2 Information Request finished in 71.5275ms 200 application/json; charset=utf-8
+11-04-2018 20:25:24 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:24 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:24 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:24 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 42.6299ms
+11-04-2018 20:25:24 2 Information Request finished in 105.8818ms 200 application/json; charset=utf-8
+11-04-2018 20:25:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:26 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:26 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:26 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 24.8797ms
+11-04-2018 20:25:26 2 Information Request finished in 44.1612ms 200 application/json; charset=utf-8
+11-04-2018 20:25:26 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:26 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:26 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:26 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 39.6351ms
+11-04-2018 20:25:26 2 Information Request finished in 61.157ms 200 application/json; charset=utf-8
+11-04-2018 20:25:28 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:28 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:28 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:28 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 23.0425ms
+11-04-2018 20:25:28 2 Information Request finished in 46.0829ms 200 application/json; charset=utf-8
+11-04-2018 20:25:28 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:28 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:28 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:28 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 214.4691ms
+11-04-2018 20:25:28 2 Information Request finished in 234.3513ms 200 application/json; charset=utf-8
+11-04-2018 20:25:30 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:30 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:30 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:30 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 54.5266ms
+11-04-2018 20:25:30 2 Information Request finished in 70.3742ms 200 application/json; charset=utf-8
+11-04-2018 20:25:30 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:30 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:30 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:30 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 37.8205ms
+11-04-2018 20:25:30 2 Information Request finished in 81.5098ms 200 application/json; charset=utf-8
+11-04-2018 20:25:32 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:32 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:32 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:32 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 65.2026ms
+11-04-2018 20:25:32 2 Information Request finished in 117.0711ms 200 application/json; charset=utf-8
+11-04-2018 20:25:32 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:32 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:32 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:32 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 76.0054ms
+11-04-2018 20:25:32 2 Information Request finished in 115.2625ms 200 application/json; charset=utf-8
+11-04-2018 20:25:34 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:34 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:34 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:34 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 57.605ms
+11-04-2018 20:25:34 2 Information Request finished in 95.5633ms 200 application/json; charset=utf-8
+11-04-2018 20:25:34 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:34 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:34 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:34 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 53.8998ms
+11-04-2018 20:25:34 2 Information Request finished in 85.7508ms 200 application/json; charset=utf-8
+11-04-2018 20:25:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:36 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:36 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:36 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.7495ms
+11-04-2018 20:25:36 2 Information Request finished in 59.1107ms 200 application/json; charset=utf-8
+11-04-2018 20:25:36 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:36 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:36 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:36 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 17.867ms
+11-04-2018 20:25:36 2 Information Request finished in 37.084ms 200 application/json; charset=utf-8
+11-04-2018 20:25:38 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restApi/v1/SetGamePosition/b556bf57-c2e8-4ce1-b931-b0eb78321726 application/json 47
+11-04-2018 20:25:38 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:38 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:38 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:38 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:38 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.SetPosition (TicTacToe) in 129.7384ms
+4/11/2018 8:25:38 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+11-04-2018 20:25:38 2 Information Request finished in 159.8781ms 400 application/json; charset=utf-8
+4/11/2018 8:25:38 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 123.0013ms
+11-04-2018 20:25:38 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+11-04-2018 20:25:38 2 Information Request finished in 192.8598ms 200 application/json; charset=utf-8
+4/11/2018 8:25:38 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:38 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:38 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 48.0101ms
+11-04-2018 20:25:38 2 Information Request finished in 163.4211ms 200 application/json; charset=utf-8
+11-04-2018 20:25:40 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:40 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:40 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:40 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.1842ms
+11-04-2018 20:25:40 2 Information Request finished in 71.2506ms 200 application/json; charset=utf-8
+11-04-2018 20:25:42 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:42 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:42 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:42 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 55.2758ms
+11-04-2018 20:25:42 2 Information Request finished in 93.9484ms 200 application/json; charset=utf-8
+11-04-2018 20:25:44 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:44 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:44 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:44 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 40.005ms
+11-04-2018 20:25:44 2 Information Request finished in 60.0852ms 200 application/json; charset=utf-8
+11-04-2018 20:25:46 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:46 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:46 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:46 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 39.6022ms
+11-04-2018 20:25:46 2 Information Request finished in 75.7229ms 200 application/json; charset=utf-8
+11-04-2018 20:25:48 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:48 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:48 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:48 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 36.0669ms
+11-04-2018 20:25:48 2 Information Request finished in 58.1673ms 200 application/json; charset=utf-8
+11-04-2018 20:25:50 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:50 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:50 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:50 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 59.1555ms
+11-04-2018 20:25:50 2 Information Request finished in 86.0265ms 200 application/json; charset=utf-8
+11-04-2018 20:25:52 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:52 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:52 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:52 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 17.3273ms
+11-04-2018 20:25:52 2 Information Request finished in 61.2918ms 200 application/json; charset=utf-8
+11-04-2018 20:25:54 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:54 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:54 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:54 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.0784ms
+11-04-2018 20:25:54 2 Information Request finished in 95.0091ms 200 application/json; charset=utf-8
+11-04-2018 20:25:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:56 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:56 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 42.5885ms
+11-04-2018 20:25:56 2 Information Request finished in 63.9832ms 200 application/json; charset=utf-8
+11-04-2018 20:25:58 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:25:58 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:25:58 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:25:58 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 15.4606ms
+11-04-2018 20:25:58 2 Information Request finished in 33.6626ms 200 application/json; charset=utf-8
+11-04-2018 20:26:00 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:00 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:00 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:00 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 56.0041ms
+11-04-2018 20:26:00 2 Information Request finished in 74.3345ms 200 application/json; charset=utf-8
+11-04-2018 20:26:02 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:02 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:02 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:02 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 39.9854ms
+11-04-2018 20:26:02 2 Information Request finished in 66.0111ms 200 application/json; charset=utf-8
+11-04-2018 20:26:04 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:04 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:04 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:04 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 35.8254ms
+11-04-2018 20:26:04 2 Information Request finished in 53.238ms 200 application/json; charset=utf-8
+11-04-2018 20:26:06 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:06 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:06 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:06 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 36.2192ms
+11-04-2018 20:26:06 2 Information Request finished in 53.9083ms 200 application/json; charset=utf-8
+11-04-2018 20:26:08 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:08 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:08 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:08 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 27.4201ms
+11-04-2018 20:26:08 2 Information Request finished in 45.7765ms 200 application/json; charset=utf-8
+11-04-2018 20:26:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:10 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:10 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 19.6607ms
+11-04-2018 20:26:10 2 Information Request finished in 65.3605ms 200 application/json; charset=utf-8
+11-04-2018 20:26:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:12 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:12 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 37.4471ms
+11-04-2018 20:26:12 2 Information Request finished in 57.1066ms 200 application/json; charset=utf-8
+11-04-2018 20:26:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:14 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:14 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 68.1492ms
+11-04-2018 20:26:14 2 Information Request finished in 119.329ms 200 application/json; charset=utf-8
+11-04-2018 20:26:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:16 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:16 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 145.9048ms
+11-04-2018 20:26:16 2 Information Request finished in 190.0429ms 200 application/json; charset=utf-8
+11-04-2018 20:26:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:18 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:18 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:18 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 36.0323ms
+11-04-2018 20:26:18 2 Information Request finished in 53.0209ms 200 application/json; charset=utf-8
+11-04-2018 20:26:20 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GetGameSession/b556bf57-c2e8-4ce1-b931-b0eb78321726  
+4/11/2018 8:26:20 PM 1 Information Executing action method TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) with arguments (b556bf57-c2e8-4ce1-b931-b0eb78321726) - ModelState is Valid
+4/11/2018 8:26:20 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/11/2018 8:26:20 PM 2 Information Executed action TicTacToe.Controllers.GameSessionController.GetGameSession (TicTacToe) in 41.0085ms
+11-04-2018 20:26:20 2 Information Request finished in 59.7511ms 200 application/json; charset=utf-8
