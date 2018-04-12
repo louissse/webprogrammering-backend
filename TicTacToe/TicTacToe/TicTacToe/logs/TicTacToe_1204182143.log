@@ -1,0 +1,72 @@
+12-04-2018 19:43:21 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+12-04-2018 19:43:22 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+4/12/2018 7:43:23 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:43:28 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/12/2018 7:43:29 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 6548.5365ms
+12-04-2018 19:43:29 1 Information Request starting HTTP/1.1 GET http://localhost:49628/css/site.css  
+12-04-2018 19:43:29 1 Information Request starting HTTP/1.1 GET http://localhost:49628/js/site.js?v=5vXEZVdzEJAvtpC_wUPcvoGTaSuADlmoj4UTo6LVDR8  
+12-04-2018 19:43:29 6 Information The file /css/site.css was not modified
+12-04-2018 19:43:29 6 Information The file /js/site.js was not modified
+12-04-2018 19:43:29 2 Information Request finished in 7167.3246ms 200 text/html; charset=utf-8
+12-04-2018 19:43:29 2 Information Request finished in 87.9317ms 304 application/javascript
+12-04-2018 19:43:29 2 Information Request finished in 89.7092ms 304 text/css
+12-04-2018 19:43:30 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+12-04-2018 19:43:30 2 Information Request finished in 64.2538ms 404 text/plain
+12-04-2018 19:44:10 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation  
+4/12/2018 7:44:10 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:44:10 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:44:10 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 150.4828ms
+12-04-2018 19:44:10 2 Information Request finished in 219.6434ms 200 application/json; charset=utf-8
+12-04-2018 19:45:30 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restapi/v1/GameInvitation application/json 111
+4/12/2018 7:45:30 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) with arguments (TicTacToe.Models.GameInvitationModel) - ModelState is Valid
+4/12/2018 7:45:30 PM 1 Information Executing HttpStatusCodeResult, setting HTTP status code 200
+4/12/2018 7:45:30 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) in 138.6637ms
+12-04-2018 19:45:30 2 Information Request finished in 211.5627ms 200 
+12-04-2018 19:45:54 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restapi/v1/GameInvitation application/json 111
+4/12/2018 7:45:54 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) with arguments (TicTacToe.Models.GameInvitationModel) - ModelState is Valid
+4/12/2018 7:45:54 PM 1 Information Executing HttpStatusCodeResult, setting HTTP status code 200
+4/12/2018 7:45:54 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) in 38.9687ms
+12-04-2018 19:45:54 2 Information Request finished in 58.4234ms 200 
+12-04-2018 19:46:56 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation  
+4/12/2018 7:46:56 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:46:56 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:46:56 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 62.9551ms
+12-04-2018 19:46:56 2 Information Request finished in 112.8256ms 200 application/json; charset=utf-8
+12-04-2018 19:47:42 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation  
+4/12/2018 7:47:42 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:47:42 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:47:42 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 30.3155ms
+12-04-2018 19:47:42 2 Information Request finished in 49.5791ms 200 application/json; charset=utf-8
+12-04-2018 19:47:59 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/7223160d-6243-498b-9d35-81b8c947b5ca  
+4/12/2018 7:47:59 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments (7223160d-6243-498b-9d35-81b8c947b5ca) - ModelState is Valid
+4/12/2018 7:47:59 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:48:00 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 26.5975ms
+12-04-2018 19:48:00 2 Information Request finished in 89.85ms 200 application/json; charset=utf-8
+12-04-2018 19:48:58 1 Information Request starting HTTP/1.1 PUT http://localhost:49628/restapi/v1/GameInvitation/7223160d-6243-498b-9d35-81b8c947b5ca application/json 109
+4/12/2018 7:48:58 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Put (TicTacToe) with arguments (7223160d-6243-498b-9d35-81b8c947b5ca, TicTacToe.Models.GameInvitationModel) - ModelState is Valid
+4/12/2018 7:48:58 PM 1 Information Executing HttpStatusCodeResult, setting HTTP status code 200
+4/12/2018 7:48:58 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Put (TicTacToe) in 29.6516ms
+12-04-2018 19:48:58 2 Information Request finished in 58.0731ms 200 
+12-04-2018 19:49:16 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/7223160d-6243-498b-9d35-81b8c947b5ca application/json 
+4/12/2018 7:49:16 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments (7223160d-6243-498b-9d35-81b8c947b5ca) - ModelState is Valid
+4/12/2018 7:49:16 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:49:16 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 27.8843ms
+12-04-2018 19:49:16 2 Information Request finished in 64.064ms 200 application/json; charset=utf-8
+12-04-2018 19:49:25 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 7:49:25 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:49:25 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:49:25 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 15.5025ms
+12-04-2018 19:49:26 2 Information Request finished in 110.941ms 200 application/json; charset=utf-8
+12-04-2018 19:50:12 1 Information Request starting HTTP/1.1 DELETE http://localhost:49628/restapi/v1/GameInvitation/7223160d-6243-498b-9d35-81b8c947b5ca application/json 109
+4/12/2018 7:50:12 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Delete (TicTacToe) with arguments (7223160d-6243-498b-9d35-81b8c947b5ca) - ModelState is Valid
+4/12/2018 7:50:12 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Delete (TicTacToe) in 12.0128ms
+12-04-2018 19:50:12 2 Information Request finished in 31.3851ms 200 
+12-04-2018 19:50:18 1 Information Request starting HTTP/1.1 DELETE http://localhost:49628/restapi/v1/GameInvitation/ application/json 109
+12-04-2018 19:50:18 2 Information Request finished in 10.4264ms 404 text/plain
+12-04-2018 19:50:22 1 Information Request starting HTTP/1.1 DELETE http://localhost:49628/restapi/v1/GameInvitation/ application/json 109
+12-04-2018 19:50:22 2 Information Request finished in 12.3285ms 404 text/plain
+12-04-2018 19:50:28 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 7:50:28 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 7:50:28 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 7:50:28 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 26.2024ms
+12-04-2018 19:50:28 2 Information Request finished in 52.5726ms 200 application/json; charset=utf-8
