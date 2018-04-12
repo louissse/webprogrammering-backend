@@ -1,0 +1,6 @@
+12-04-2018 20:33:52 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+12-04-2018 20:33:52 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 8:33:53 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:33:53 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 8:33:53 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 86.9039ms
+12-04-2018 20:33:53 2 Information Request finished in 330.2973ms 200 application/json; charset=utf-8

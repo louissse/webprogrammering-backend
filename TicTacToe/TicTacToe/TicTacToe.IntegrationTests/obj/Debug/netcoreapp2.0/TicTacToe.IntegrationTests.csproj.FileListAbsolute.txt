@@ -5,6 +5,7 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.runtimeconfig.json
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.runtimeconfig.dev.json
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.dll
+C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.pdb
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.Logging.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.Logging.pdb
@@ -14,6 +15,5 @@ C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTac
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\obj\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.csproj.CoreCompileInputs.cache
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\obj\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.AssemblyInfoInputs.cache
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\obj\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.AssemblyInfo.cs
-C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\bin\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.pdb
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\obj\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.dll
 C:\Users\loh\Documents\projects\WebProgrammingBackend\TicTacToe\TicTacToe\TicTacToe.IntegrationTests\obj\Debug\netcoreapp2.0\TicTacToe.IntegrationTests.pdb

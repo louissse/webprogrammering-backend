@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "456fc82349429e0a1dbae03040024c6615aec0b1"
+    "signature": "5bf813ef1e46fb7d83ca8f2318c04c0f1d4daf25"
   },
   "compilationOptions": {
     "defines": [
@@ -23,6 +23,7 @@
     ".NETCoreApp,Version=v2.0": {
       "TicTacToe/1.0.0": {
         "dependencies": {
+          "Halcyon.Mvc": "2.5.1",
           "Microsoft.AspNetCore.All": "2.0.5",
           "Microsoft.NETCore.App": "2.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.2",
@@ -39,6 +40,36 @@
         },
         "compile": {
           "TicTacToe.dll": {}
+        }
+      },
+      "Halcyon/2.5.1": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1",
+          "System.Reflection": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.3.0",
+          "Tavis.UriTemplates": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Halcyon.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Halcyon.dll": {}
+        }
+      },
+      "Halcyon.Mvc/2.5.1": {
+        "dependencies": {
+          "Halcyon": "2.5.1",
+          "Microsoft.AspNetCore.Mvc.Core": "2.0.2",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "2.0.2",
+          "NETStandard.Library": "2.0.0",
+          "Newtonsoft.Json": "10.0.1"
+        },
+        "runtime": {
+          "lib/netstandard1.6/Halcyon.Mvc.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.6/Halcyon.Mvc.dll": {}
         }
       },
       "Libuv/1.10.0": {
@@ -4059,6 +4090,17 @@
           "System.Xml.XPath": "4.3.0"
         }
       },
+      "Tavis.UriTemplates/1.1.0": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Tavis.UriTemplates.dll": {}
+        },
+        "compile": {
+          "lib/netstandard1.0/Tavis.UriTemplates.dll": {}
+        }
+      },
       "WindowsAzure.Storage/8.1.4": {
         "dependencies": {
           "Microsoft.Data.OData": "5.8.2",
@@ -4268,6 +4310,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Halcyon/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4MLesYUsFj1pj1aWi/lecdhq+1F+MaSCq/AS6orsKdT2jRn5xXZl0QMRVBVGvFPenmrP8PpWOXh03RxKbTjT5A==",
+      "path": "halcyon/2.5.1",
+      "hashPath": "halcyon.2.5.1.nupkg.sha512"
+    },
+    "Halcyon.Mvc/2.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mQo+VJ475WRKxYQTxQjzOHAsinl1x6jJ6cY9eLh80dgQogXm5LOz+RNParC74TofIJ/m53bKiv3FChV3wOPytw==",
+      "path": "halcyon.mvc/2.5.1",
+      "hashPath": "halcyon.mvc.2.5.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
@@ -6396,6 +6452,13 @@
       "sha512": "sha512-jw9oHHEIVW53mHY9PgrQa98Xo2IZ0ZjrpdOTmtvk+Rvg4tq7dydmxdNqUvJ5YwjDqhn75mBXWttWjiKhWP53LQ==",
       "path": "system.xml.xpath.xdocument/4.3.0",
       "hashPath": "system.xml.xpath.xdocument.4.3.0.nupkg.sha512"
+    },
+    "Tavis.UriTemplates/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KVvnxcKtWL7lQHxgrkiDf0h+N1AsrBk2VCmdUrUmkHtPYV4OMAWAaN6SaBTwhwy9ZM+ygbPWKJAM898AOHAz4g==",
+      "path": "tavis.uritemplates/1.1.0",
+      "hashPath": "tavis.uritemplates.1.1.0.nupkg.sha512"
     },
     "WindowsAzure.Storage/8.1.4": {
       "type": "package",

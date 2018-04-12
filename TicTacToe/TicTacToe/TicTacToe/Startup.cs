@@ -17,6 +17,8 @@ using Microsoft.Extensions.Configuration;
 using TicTacToe.Options;
 using Microsoft.AspNetCore.Mvc.Razor;
 using TicTacToe.ViewEngines;
+using Halcyon.Web.HAL.Json;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace TicTacToe
 {
@@ -34,7 +36,11 @@ namespace TicTacToe
         public void ConfigureCommonServices(IServiceCollection services)
         {
             services.AddLocalization(options => options.ResourcesPath = "Localization");
-            services.AddMvc().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, options => options.ResourcesPath = "Localization").AddDataAnnotationsLocalization();
+            services.AddMvc( o =>
+            {
+                o.OutputFormatters.RemoveType<JsonOutputFormatter>();
+                o.OutputFormatters.Add(new JsonHalOutputFormatter(new string[] { "application/hal+json", "application/vnd.example.hal+json", "application/vnd.example.hal.v1+json" }));
+            }).AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix, options => options.ResourcesPath = "Localization").AddDataAnnotationsLocalization();
             services.AddSingleton<IUserService, UserService>();
             services.AddSingleton<IGameInvitationService, GameInvitationService>();
             services.AddSingleton<IGameSessionService, GameSessionService>();

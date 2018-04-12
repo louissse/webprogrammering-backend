@@ -1,0 +1,33 @@
+12-04-2018 20:34:10 0 Information User profile is available. Using 'C:\Users\loh\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+12-04-2018 20:34:11 1 Information Request starting HTTP/1.1 GET http://localhost:49628/  
+4/12/2018 8:34:12 PM 1 Information Executing action method TicTacToe.Controllers.HomeController.Index (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:34:16 PM 1 Information Executing ViewResult, running view at path /Views/Home/Index.cshtml.
+4/12/2018 8:34:17 PM 2 Information Executed action TicTacToe.Controllers.HomeController.Index (TicTacToe) in 5197.4865ms
+12-04-2018 20:34:17 2 Information Request finished in 5942.7442ms 200 text/html; charset=utf-8
+12-04-2018 20:34:18 1 Information Request starting HTTP/1.1 GET http://localhost:49628/favicon.ico  
+12-04-2018 20:34:18 2 Information Request finished in 39.8284ms 404 text/plain
+12-04-2018 20:34:41 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 8:34:41 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:34:41 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 8:34:42 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 244.3047ms
+12-04-2018 20:34:42 2 Information Request finished in 318.8826ms 200 application/json; charset=utf-8
+12-04-2018 20:34:48 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 8:34:48 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:34:48 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 8:34:48 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 21.0948ms
+12-04-2018 20:34:48 2 Information Request finished in 47.8293ms 200 application/json; charset=utf-8
+12-04-2018 20:35:05 1 Information Request starting HTTP/1.1 POST http://localhost:49628/restapi/v1/GameInvitation application/json 111
+4/12/2018 8:35:05 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) with arguments (TicTacToe.Models.GameInvitationModel) - ModelState is Valid
+4/12/2018 8:35:05 PM 1 Information Executing HttpStatusCodeResult, setting HTTP status code 200
+4/12/2018 8:35:05 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Post (TicTacToe) in 266.0634ms
+12-04-2018 20:35:05 2 Information Request finished in 342.1868ms 200 
+12-04-2018 20:35:14 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/json 
+4/12/2018 8:35:14 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:35:14 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 8:35:14 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 68.5342ms
+12-04-2018 20:35:14 2 Information Request finished in 88.9856ms 200 application/json; charset=utf-8
+12-04-2018 20:38:12 1 Information Request starting HTTP/1.1 GET http://localhost:49628/restapi/v1/GameInvitation/ application/hal+json 
+4/12/2018 8:38:12 PM 1 Information Executing action method TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) with arguments ((null)) - ModelState is Valid
+4/12/2018 8:38:12 PM 1 Information Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+4/12/2018 8:38:12 PM 2 Information Executed action TicTacToe.Controllers.GameInvitationApiController.Get (TicTacToe) in 82.1922ms
+12-04-2018 20:38:12 2 Information Request finished in 104.1835ms 200 application/json; charset=utf-8
